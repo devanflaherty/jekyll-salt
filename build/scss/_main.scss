@@ -1,0 +1,276 @@
+html, body {
+  height:100%!important;
+  height: auto;
+  &.connectFixed, &.navFixed {
+    position: fixed;
+    width: 100%;
+  }
+}
+body {
+  background-color: $white;
+}
+
+
+/************************
+
+** UTILITY CLASSES
+
+*************************/
+.contrast-bg {
+  background-color: $black;
+}
+.primary-bg {
+  background-color: $primaryColor;
+}
+.secondary-bg {
+  background-color: $secondaryColor;
+}
+.tertiary-bg {
+  background-color: $tertiaryColor;
+}
+.white-bg {
+  background-color: $white;
+}
+.off-white-bg {
+  background-color: $offWhite;
+}
+.vh {
+  height: 100vh;
+}
+
+.contrast-text {
+  h2, h3, h4, h5, h6, p, blockquote, span {
+    color: $offWhite!important;
+  }
+  h6 {
+    border-color: $offWhite;
+  }
+  .subheader {
+    color: $white!important;
+    border-color: $offWhite!important;
+  }
+  a.link {
+    color: $offWhite;
+    border-color: $offWhite!important;
+  }
+  .go-down {
+    .go-down-icon {
+      background-image: url(/images/down-white.png)!important;
+    }
+  }
+}
+
+/************************
+
+** PADDING CLASSES
+
+*************************/
+@include breakpoint(small) {
+  .small {
+    &-pad {
+      padding: 30px 0;
+    }
+    &-pad-medium {
+      padding: 100px 0;
+    }
+    &-pad-large {
+      padding: 200px 0;
+    }
+  }
+}
+@include breakpoint(medium) {
+  .medium {
+    &-pad {
+      padding: 30px 0;
+    }
+    &-pad-medium {
+      padding: 100px 0;
+    }
+    &-pad-large {
+      padding: 200px 0;
+    }
+  }
+}
+
+/************************
+
+** PANRALLAX & OVERLAY
+
+*************************/
+// PARALLAX
+.para-parent {
+  position: relative;
+  overflow: hidden;
+  .row {
+    position: relative;
+  }
+}
+.parallax {
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-size: cover!important;
+  background-position: center;
+  transform: scale(1.5);
+  opacity: 1;
+  transition: opacity 1s ease;
+  @include breakpoint(small only) {
+  //  background-position: 50% 0px!important;
+  //  transform: scale(1);
+  }
+  &.invisible {
+    opacity: 0;
+  }
+}
+.cover-bg {
+  background-size: cover!important;
+}
+.overlay {
+  opacity: 0;
+  background: $primaryColor;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+}
+
+/************************
+
+** TYPOGRAPHY CLASSES
+
+*************************/
+::-moz-selection {
+  background: $tertiaryColor;
+}
+::selection {
+  background: $tertiaryColor;
+}
+h1, h2, h3, h4, h5 {
+  &.sans {
+    font-family: $sans600;
+    font-weight: 200;
+    strong {
+      font-family: $sans800;
+      font-weight: 200;
+    }
+  }
+}
+h2 {
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  font-size: 90px;
+  line-height: 80px;
+  @include breakpoint(large) {
+    font-size: 120px;
+    line-height: 110px;
+  }
+  strong {
+    font-family: $serif;
+    color: $black;
+  }
+  span {
+    color: $primary-color;
+  }
+  &.brand-vision {
+    font-size: 70px;
+    line-height: 60px;
+    @include breakpoint(large) {
+      font-size: 90px;
+      line-height: 80px;
+    }
+  }
+}
+h3 {
+  color: $black;
+  font-size: 50px;
+  line-height: 45px;
+  @include breakpoint(medium) {
+    font-size: 80px;
+    line-height: 70px;
+  }
+  @include breakpoint(large) {
+    font-size: 100px;
+    line-height: 90px;
+  }
+}
+h6 {
+  font-size: 20px;
+  font-family: $serif;
+  padding-top: 3px;
+  display: inline-block;
+  border-top: 2px solid $black;
+}
+.serif {
+  font-family: $serif;
+}
+.sans {
+  font-family: $sans400;
+}
+.hint {
+  color: $black;
+  font-family: $serif;
+  font-size: 14px;
+  width: 90%;
+  margin: 0 auto;
+  @include breakpoint(medium) {
+    font-size: 18px;
+  }
+}
+.iphone .hint,.ipad .hint {
+  margin: 0 0 20px;
+}
+
+/************************
+
+** CONTENT
+
+*************************/
+section {
+  overflow: hidden visible;
+}
+#statement {
+  //background-color: $offWhite;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  .hint {
+    margin-bottom: 24px;
+  }
+}
+
+/************************
+
+** SOCIAL
+
+*************************/
+.social-header {
+  margin: 0!important;
+  p {
+    color: $light-gray!important;
+    @include breakpoint(medium) {
+      padding: 0 20px;
+    }
+  }
+}
+.social-list {
+  position: relative;
+  padding: 30px 0;
+  @include breakpoint(small only) {
+    margin-top: 60px;
+  }
+  div {
+    padding: 0!important;
+    margin: 0!important;
+    a.link {
+      font-size: 26px;
+    }
+    a, i {
+      transition: all 0.25s ease;
+    }
+  }
+}

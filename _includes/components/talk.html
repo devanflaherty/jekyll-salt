@@ -1,0 +1,23 @@
+<!-- TALK -->
+<section id="talk" class="small-pad-medium talk {{ page.talk[0].class }}">
+  <div class="row align-center align-middle">
+    <div class="small-11 medium-6 large-5 columns">
+      <h2>{{ page.talk[0].title }}</h2>
+    </div>
+    <div class="small-11 medium-5 large-5 columns">
+      <h6>{{ page.talk[0].subTitle }}</h6>
+
+      <p>{{ page.talk[0].content }}</p>
+
+    <div class="row">
+      <div class="columns small-6 medium-12 large-6">
+        <a href="mailto:{{ site.email }}" class="link">{{ site.email }}</a>
+      </div>
+      <div class="columns small-6 medium-12 large-6">
+        <a class="tel link" href="tel:{{ site.phone }}">{{ site.phone }}</a>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>

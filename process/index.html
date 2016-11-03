@@ -1,0 +1,126 @@
+---
+layout: default
+title: Process
+permalink: /process/
+statement: Our Way
+links:
+  - url: "#serviceList"
+    value: What We Do
+talk:
+  - title: We<br> Should<br> Talk
+    subTitle: You had me at "hello"
+    content: Believe it or not, we love what we do, and we'd love to partner with you. Wether you can't figure out where to start or if you're ready to take your business to the next level, we're here to see it through. Just say "hello" and we'll set the sails.
+    class: secondary-bg
+---
+
+<!-- Heart -->
+<section id="heart" class="white-bg small-pad-medium">
+  <div class="row align-center" style="padding-bottom: 60px;">
+    <div class="small-11 medium-9 large-10 columns">
+      <h6>Our Heart</h6>
+    </div>
+  </div>
+  <div class="row align-center">
+    <div class="small-11 medium-9 large-5 columns">
+      <h3>{{ site.data.pillars[0].title }}</h3>
+      <p>
+        {{ site.data.pillars[0].content }}
+      </p>
+    </div>
+    <div class="small-11 medium-9 large-5 columns">
+      <h3>{{ site.data.pillars[1].title }}</h3>
+      <p>
+        {{ site.data.pillars[1].content }}
+      </p>
+    </div>
+    <div class="small-11 medium-9 large-10 columns">
+      <div class="row align-center align-middle">
+        <div class="columns small-12 medium-12 large-6" style="margin: 0;">
+          <h3>{{ site.data.pillars[2].title }}</h3>
+        </div>
+        <div class="columns small-12 medium-12 large-6">
+          <p>
+            {{ site.data.pillars[2].content }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="contrast-bg small-pad-medium">
+  <h3 class="text-center" style="color: white; padding-bottom: 60px">What We Do</h3>
+  <ul id="serviceList" class="row small-up-1 medium-up-2" style="padding: 0 30px;">
+    {% include content/service-list.html %}
+  </ul>
+</section>
+
+<!-- OUTRO -->
+<section id="statement" class="statement small-pad-medium off-white-bg">
+  <div class="row align-center align-middle text-center">
+    <div class="columns">
+      <img id="anvil-icon" class="drawicon" src="{{ site.assetUrl }}/images/design/anvil-hammer.png" alt="anvil">
+
+      <h4 class="hint">
+        Creative thinking is believing something can be made better,<br class="show-for-medium">
+        and then creating that belief into action.
+      </h4>
+      <h2 class="brand-vision statement-pop">
+        We<br class="hide-for-medium"> Believe
+      </h2>
+      <a class="button" style="margin-top:20px;" href="#whois">Who we are</a>
+    </div>
+  </div>
+</section>
+
+<!-- Location  -->
+{% include content/location.html %}
+
+<!-- INSTAFEED -->
+{% include content/instafeed.html %}
+
+<!-- MEDIUM -->
+
+<article id="brand" class="contrast-bg contrast-text para-parent small-pad-medium">
+  <div class="parallax invisible" style="background-image: url({{ site.assetUrl }}/images/design/church.jpg)"
+  ></div>
+  <div class="overlay" style="background: #EB5544; opacity: 0.95"></div>
+  <div class="row align-center align-middle type-row">
+    <div class="columns small-11 medium-9 large-8 self-align-left">
+      <div class="text-center">
+        <i class="fa fa-medium" style="color: #f4f4f4; font-size: 98px; margin-bottom: 20px;"></i>
+      </div>
+      <h4>Follow our publication on Medium</h4>
+      <p>
+        Sometimes we just need let off some steam, and we do that best through writing.
+        Articles on creativty, design, web development, leadership, or our theories on what we're watching,
+        our publication has a little bit of everything, for everyone.
+      </p>
+      <a href="https://medium.com/salt-agency" class="link">View our Medium</a>
+    </div>
+  </div>
+</article>
+
+<!-- Who Is -->
+<section id="whois" class="small-pad-medium">
+  <div class="row align-middle align-center">
+    <div class="small-11 medium-9 large-10 columns">
+      <h6 class="text-center">Who is Salt?</h6>
+    </div>
+  </div>
+
+  <div class="row align-middle align-center" style="padding-top: 30px">
+    <div class="small-11 medium-5 columns">
+      <img class="scale bio" src="{{ site.assetUrl }}/images/me-tunnel.jpg" alt="Salt Agency : Devan Flaherty Photograph"/>
+    </div>
+    <div class="small-11 medium-6 columns" style="padding-top: 30px;">
+      <h3>Devan Flaherty</h3>
+      <span>Owner / Creative Director</span>
+      <p style="margin-top: 15px; margin-bottom: 0;">Devan has been in the creative fields for the past decade. He has experience in graphic design, front-end web development, and creative direction. Devan spent the last 3 years as the Creative Director for <a href="http://freshlifechurch.com" target="_blank">Fresh Life Church</a> where he lead a team of 11 full time employees.</p>
+    </div>
+  </div><!-- close row -->
+</section>
+
+<!-- TALK -->
+{% include components/talk.html %}

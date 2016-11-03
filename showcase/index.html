@@ -1,0 +1,40 @@
+---
+layout: default
+title: Showcase
+permalink: /showcase/
+statement: Our Makings
+links:
+  - url: "#showcaseList"
+    value: What We Do
+talk:
+  - title: Hoist<br> The<br> Sails
+    subTitle: You're up next
+    content: Give us a call, email, send us a raven, what ever you prefer, and let's kick some ass.
+    class: tertiary-bg contrast-text
+---
+
+<!-- SHOWCASE-LIST -->
+{% include content/showcase-list.html %}
+
+<!-- STATEMENT -->
+<section id="statement" class="small-pad-medium medium-pad-large">
+  <div class="row align-center align-middle text-center">
+    <div class="columns">
+      <img id="face-icon" class="drawicon" src="{{ site.assetUrl }}/images/design/face.png" alt="face">
+      <h4 class="hint">
+        When all are thinking alike,<br>
+        then no one is thinking.
+      </h4>
+      <h2 class="brand-vision statement-pop">
+        We<br class="hide-for-medium"> Think<br class="hide-for-medium"> Different
+      </h2>
+      <a class="button" style="margin-top:20px;" href="/process#services">What We Do</a>
+    </div>
+  </div>
+</section>
+
+<!-- Dribbble -->
+{% include content/dribbble.html %}
+
+<!-- TALK -->
+{% include components/talk.html %}

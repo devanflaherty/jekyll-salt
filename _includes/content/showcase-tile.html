@@ -1,0 +1,11 @@
+<li class="columns">
+  <div class="project-details row align-middle" style="background-color: {{ item.primaryColor }}">
+    <a href="/showcase/{{ item.slug }}" class="column">
+      <h5>
+        Case Study
+      </h5>
+      <h3>{{ item.title }}</h3>
+    </a>
+  </div>
+  <img class="scale" src="{{ site.assetUrl }}/projects/{{ item.slug }}/thumbnail.jpg" alt="{{ item.slug }}">
+</li>

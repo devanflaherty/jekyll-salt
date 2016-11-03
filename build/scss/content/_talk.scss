@@ -1,0 +1,25 @@
+/************************
+
+** TALK PANEL
+
+*************************/
+.talk {
+  h2 {
+    margin: 0;
+    @include breakpoint(small only) {
+      margin-bottom: 15px;
+    }
+    @include breakpoint(medium only) {
+      font-size: 66px!important;
+      line-height: 1;
+    }
+  }
+  h6, p {
+    margin-bottom: 15px;
+  }
+  @include breakpoint(medium only) {
+    .row .row .columns:first-of-type {
+      margin-bottom: 12px!important;
+    }
+  }
+}

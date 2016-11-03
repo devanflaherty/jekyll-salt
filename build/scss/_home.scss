@@ -1,0 +1,22 @@
+/************************
+
+** HOME
+
+*************************/
+#discover {
+  #discovery-columns {
+    .columns {
+      @include breakpoint(medium down) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .discover-link {
+    @include breakpoint(medium) {
+      padding-top: 20px;
+    }
+    .columns {
+      margin-bottom: 0!important;
+    }
+  }
+}

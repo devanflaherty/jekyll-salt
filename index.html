@@ -1,0 +1,120 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+title: Home
+permalink: /
+statement: Let's Make Waves
+links:
+  - url: "#showcaseList"
+    value: Get Started
+talk:
+  - title: Let's<br> Make<br> Waves
+    subTitle: It all comes down to this
+    content: One of our main pillars is to "Make Waves", we want to help you make an impact. More than just friendly conversation, or clever design, we believe we can help you create change. So what are you waiting for?
+    class: ""
+---
+
+<!-- INTRO -->
+<section id="statement" class="white-bg">
+  <div class="row align-center align-middle text-center vh">
+    <div class="columns">
+      <img id="eye-icon" class="drawicon" src="{{ site.assetUrl }}/images/design/eye.png" alt="eye">
+
+      <h4 class="hint">
+        It’s your difference that sets you <br>apart not your similarity.
+      </h4>
+      <h2 class="brand-vision statement-pop">
+        Stand <br class="hide-for-medium">Apart
+      </h2>
+      <a class="button" style="margin-top:20px;" href="#discover">Our Heart</a>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWCASE LIST -->
+{% include content/showcase-list.html %}
+
+<!-- Process -->
+<section id="discover" class="row align-middle align-center small-pad-medium">
+  <div class="small-11 large-10 columns">
+    <h3 style="padding-bottom: 60px">Passion: Branding
+      &amp; UX</h3>
+
+    <div id="discovery-columns" class="row align-center">
+      <div class="small-12 medium-10 large-4 columns">
+        <h6>{{ site.data.pillars[0].altTitle }}</h6>
+        <p>
+          {{ site.data.pillars[0].content }}
+        </p>
+      </div>
+      <div class="small-10 small-offset-1 medium-9 large-4 large-offset-0 columns">
+        <h6>{{ site.data.pillars[1].altTitle }}</h6>
+        <p>
+          {{ site.data.pillars[1].content }}
+        </p>
+      </div>
+      <div class="small-12 medium-10 large-4 columns">
+        <h6>{{ site.data.pillars[2].altTitle }}</h6>
+        <p>
+          {{ site.data.pillars[2].content }}
+        </p>
+      </div>
+    </div>
+    <div class="row discover-link">
+      <div class="columns small-12 medium-3 large-4 medium-offset-1 large-offset-0">
+        <a href="/process#heart" class="link">
+          Our Heart
+        </a>
+      </div>
+      <div class="columns small-12 medium-3 large-4">
+        <br class="hide-for-medium">
+        <a href="/process#services" class="link">
+          What We Do
+        </a>
+      </div>
+      <div class="columns small-12 medium-3 large-4">
+        <br class="hide-for-medium">
+        <a href="/showcase" class="link">
+          Our Work
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTRO -->
+<section id="statement-outro" class="small-pad-medium medium-pad-large off-white-bg">
+  <div class="row align-center align-middle text-center">
+    <div class="columns">
+      <img id="skull-icon" class="drawicon" src="{{ site.assetUrl }}/images/design/skull.png" alt="skull">
+
+      <h4 class="hint">
+        We don’t keep tabs on the status quo.
+      </h4>
+      <h2 class="brand-vision statement-pop">
+        Defy<br class="hide-for-medium"> Reason
+      </h2>
+      <a class="button" style="margin-top:20px;" href="/process">Our Process</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE LIST -->
+<section id="services" class="contrast-bg small-pad-medium text-center contrast-text">
+  <ul id="serviceList" class="row small-up-2 medium-up-4 large-up-4 text-center">
+
+    {% for service in site.data.services %}
+      <li class="columns">
+        <img src="{{ site.assetUrl }}/images/drawn-services/{{ service.image }}" alt="{{ service.title }} icon"/>
+        <span>{{ service.title }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  <br><br>
+  <a href="/process" class="link">More about what we do</a>
+</section>
+
+<!-- SHOWCASE LIST -->
+{% include components/talk.html %}

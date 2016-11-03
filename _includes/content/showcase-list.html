@@ -1,0 +1,41 @@
+<!--  Showcase -->
+{% assign pLimit = 3 %}
+{% if page.title == "Showcase" %}
+  {% assign pLimit = 9 %}
+{% endif %}
+
+{% assign featured = site.work | where:"feature","true" %}
+{% assign fSize = featured | size %}
+{% assign list = site.work | where:"feature","false" %}
+{% assign lSize = list | size %}
+{% assign size = fSize | plus: lSize %}
+
+<section>
+  <ul id="showcaseList" class="flex expanded">
+
+    {% for item in featured limit:3 %}
+      {% include content/showcase-tile.html %}
+    {% endfor %}
+
+    {% for item in list reversed limit:pLimit %}
+      {% include content/showcase-tile.html %}
+    {% endfor %}
+
+    {% if size >= 4 and size < 6 or size >= 7 and size < 9 %}
+      {% if page.title == 'Showcase' %}
+      <li class="columns expanded secondary-bg">
+        <div class="project-details row align-middle" style="background-color: #444">
+          <a href="#talk" class="column">
+            <h5>
+              You're' next
+            </h5>
+            <h3>Let's Make Waves</h3>
+          </a>
+        </div>
+        <img class="scale" src="{{ site.assetUrl }}/projects/noble/thumbnail.jpg" alt="">
+      </li>
+      {% endif %}
+    {% endif %}
+  </ul>
+
+</section>

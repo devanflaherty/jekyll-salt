@@ -1,0 +1,63 @@
+<% if (contrast === true) {
+  var contrastText = "contrast-text";
+} else {
+  contrastText = "";
+}%>
+  <header id="header" class="flex align-center <%= contrastText %>" style="max-width: 100%;">
+    <% if( typeof project !== 'undefined' && project) { %>
+      <div class="parallax invisible" style="background-image: url(<%= assetUrl %><%= headerImg %>)"></div>
+      <div class="overlay"></div>
+    <% } %>
+
+    <section class="row align-center expanded
+    <% if( typeof project !== 'undefined' && project) { %> project <% } %>">
+      <nav id="main-nav" class="small-6 medium-12 columns small-order-2 medium-order-1">
+        <h1 class="logo">
+          <a href="/">salt</a>
+        </h1>
+        <ul class="show-for-medium" data-show="show">
+          <% include ../components/links %>
+        </ul>
+        <a class="nav-toggle hide-for-medium" href="#"><span></span></a>
+      </nav>
+
+      <div id="headline" class="small-6 medium-10 columns small-order-1 medium-order-2 flex">
+        <p>Crafting compelling stories executed through beautiful design, destined to make an impact.</p>
+      </div>
+        <div class="page-links" <% if( typeof project !== 'undefined' && project) { %>style="border-bottom-color: <%= project.style.primaryColor %>;"<% } %>>
+          <h1 class="logo">salt</h1>
+          <% if( typeof links !== 'undefined' && links) { %>
+            <div class="links show-for-medium">
+              <% links.forEach(function(link) { %>
+                <a class="link" href="<%= link.url %>"><%= link.value %></a><br>
+              <% }) %>
+            </div>
+          <% } %>
+        </div>
+        <% if( locals.logo !== undefined ) { %>
+          <img class="show-for-medium page-logo" src="<%= locals.logo %>" alt="page-logo"/>
+        <% } %>
+        <div class="subheader-wrap">
+          <p class="subheader show-for-medium">
+            <%- subtitle %>
+          </p>
+        </div>
+      </div>
+
+      <div class="small-12 small-order-3 hide-for-medium">
+        <% if( locals.logo !== undefined ) { %>
+          <img class="page-logo" src="<%= locals.logo %>" alt="page-logo"/>
+        <% } %>
+        <p class="subheader">
+          <%- subtitle %>
+        </p>
+      </div>
+    </section>
+
+    <div class="go-down">
+      <a href="#main" class="go-down-icon"></a>
+    </div>
+
+  </header>
+
+  <% include ../components/full-nav.ejs %>

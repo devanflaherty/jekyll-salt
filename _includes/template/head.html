@@ -1,0 +1,68 @@
+{% if page.layout == 'showcase-single' %}
+  {% assign pageTitleSub = page.title %}
+  {% assign description = page.subtitle | append: ' | ' | append: page.excerpt %}
+  {% assign imageSrc = site.assetUrl | append: '/projects/' | append: page.permalink | append: '/thumbnail.jpg' %}
+  {% assign unFurl = 'showcase/' | append: page.permalink %}
+{% else %}
+  {% assign pageTitleSub = page.title %}
+  {% assign description = "Salt Agency: a digital agency specializing in branding, graphic design and web development in Kalispell, Montana." %}
+  {% assign imageSrc = site.assetUrl | append: '/images/we-are-salt.jpg' %}
+  {% assign unFurl = page.permalink | downcase %}
+  {% if page.title == 'Home' %}
+    {% assign pageTitleSub = "A Digital Agency | Branding &amp; Web Design | Kalispell, MT"%}
+    {% assign unFurl = '' %}
+  {% endif %}
+{% endif %}
+
+{% assign pageTitle = "SALT | " | append: pageTitleSub %}
+
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ description }}">
+<meta name="robots" content="all">
+<meta name="zipcode" content="59901">
+<link rel="image_src" href="{{ imageSrc }}">
+<meta property="og:url" content="http://saltagency.co/{{ unFurl }}" />
+<meta property="og:image" content="{{ imageSrc }}" />
+<meta property="og:title" content="{{ pageTitle }}" />
+<meta property="og:description" content="{{ description }}" />
+
+<!--  twitter card tags additive with the og: tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:domain" value="http://saltagency.co" />
+<meta name="twitter:title" value="{{ pageTitle }}" />
+<meta name="twitter:description" value="{{ description }}" />
+<meta name="twitter:image" content="{{ imageSrc }}" />
+<meta name="twitter:url" value="http://saltagency.co/{{ unFurl }}" />
+
+<link rel="icon" href="/assets/images/fav/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/fav/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/fav/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/fav/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/fav/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/fav/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/fav/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/fav/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/assets/images/fav/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/images/fav/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/images/fav/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/images/fav/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/images/fav/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/images/fav/favicon-128.png" sizes="128x128" />
+
+<link rel='stylesheet' href='/assets/css/styles.css' />
+<link rel='stylesheet' href='/assets/fonts/young-serif/fontface.css' />
+<link rel='stylesheet' href='/assets/fonts/gotham/stylesheet.css' />
+<meta name="HandheldFriendly" content="True" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<script src="https://use.fontawesome.com/6931815dd0.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75737789-1', 'auto');
+  ga('send', 'pageview');
+</script>
