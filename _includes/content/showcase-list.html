@@ -16,26 +16,30 @@
       {% for item in featured limit:3 %}
         {% include content/showcase-tile.html %}
       {% endfor %}
+
+      {% for item in list reversed limit:pLimit %}
+        {% include content/showcase-tile.html %}
+      {% endfor %}
+
+      {% if size >= 4 and size < 6 or size >= 7 and size < 9 %}
+        <li class="columns expanded secondary-bg">
+          <div class="project-details row align-middle" style="background-color: #444">
+            <a href="#talk" class="column">
+              <h5>
+                You're' next
+              </h5>
+              <h3>Let's Make Waves</h3>
+            </a>
+          </div>
+          <img class="scale" src="{{ site.assetUrl }}/projects/noble/thumbnail.jpg" alt="">
+        </li>
+      {% endif %}
     {% endif %}
 
-    {% for item in list reversed limit:pLimit %}
-      {% include content/showcase-tile.html %}
-    {% endfor %}
-
-    {% if size >= 4 and size < 6 or size >= 7 and size < 9 %}
-      {% if page.title == 'Showcase' %}
-      <li class="columns expanded secondary-bg">
-        <div class="project-details row align-middle" style="background-color: #444">
-          <a href="#talk" class="column">
-            <h5>
-              You're' next
-            </h5>
-            <h3>Let's Make Waves</h3>
-          </a>
-        </div>
-        <img class="scale" src="{{ site.assetUrl }}/projects/noble/thumbnail.jpg" alt="">
-      </li>
-      {% endif %}
+    {% if page.title == "Home" %}
+      {% for item in site.work limit:3 %}
+        {% include content/showcase-tile.html %}
+      {% endfor %}
     {% endif %}
   </ul>
 
