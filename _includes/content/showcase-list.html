@@ -12,10 +12,11 @@
 
 <section>
   <ul id="showcaseList" class="flex expanded">
-
-    {% for item in featured limit:3 %}
-      {% include content/showcase-tile.html %}
-    {% endfor %}
+    {% if page.title == "Showcase" %}
+      {% for item in featured limit:3 %}
+        {% include content/showcase-tile.html %}
+      {% endfor %}
+    {% endif %}
 
     {% for item in list reversed limit:pLimit %}
       {% include content/showcase-tile.html %}
