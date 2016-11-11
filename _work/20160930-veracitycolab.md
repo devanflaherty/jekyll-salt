@@ -2,21 +2,27 @@
 title: VeracityColab
 slug: veracity-colab
 published: true
-subtitle  : Motion Graphics & Sh*t
-type      : Branding & Logo Design
-excerpt   : Being a fun & exquisite motion graphics artist we created a brand we felt would do his work justice, and would lend it self to have movement and pop when utilized in his personal reel.
+subtitle  : Agency Thinking. Video Focused.
+type      : Web Development
+excerpt   : With clients ranging from Google, Intuit, and Adobe, VeracityColab is a top of the line creative video agency. They more than just deliver exceptional live-action and motion graphic videos they create great ideas, and execute them.
 feature  : false
 team:
  - name: Devan Flaherty
-   position: Creative Lead
+   position: Web Development
+ - name: Ian Nelson
+   position: Creative Direction
+ - name: Paul Slemmer
+   position: Design & Oversight
+ - name: Bethany Moore
+   position: Project Manager
 scope     :
-- label: Branding
-- label: Design
-- label: Print
-primaryColor    : "#FF3C00"
-secondaryColor   : "#24B6DB"
-backgroundColor : "#F7F8F8"
-contrast : false
+- label: UI/UX
+- label: Front-End Web Development
+- label: Wordpress Development
+primaryColor    : "#2abbbe"
+secondaryColor   : "#222222"
+backgroundColor : "#f9f9f9"
+contrast : true
 ---
 
 This was a fun one.

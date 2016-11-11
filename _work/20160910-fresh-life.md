@@ -2,54 +2,73 @@
 title: Fresh Life Church
 slug: fresh-life-church
 published: true
-subtitle  : Motion Graphics & Sh*t
-type      : Branding & Logo Design
-excerpt   : Being a fun & exquisite motion graphics artist we created a brand we felt would do his work justice, and would lend it self to have movement and pop when utilized in his personal reel.
+
+subtitle  : Real, relevant, raw
+type      : Creative Director
+excerpt   : Fresh Life Church is a church led by Levi and Jennie Lusko with multiple campuses all across the state of Montana. Their vision is simple: to see those stranded in sin find life and liberty in Jesus Christ.
 feature  : false
 team:
  - name: Devan Flaherty
    position: Creative Lead
+-  name: Levi Lusko
+   position: Senior Pastor
+-  name: Devan Flaherty
+   position: Creative Director
+-  name: John Mark Creamer
+   position: Project Manager
+-  name: Elisha Guido
+   position: Lead Designer
+-  name: Tyler Bodway
+   position: Web Developer"
 scope     :
-- label: Branding
-- label: Design
-- label: Print
-primaryColor    : "#FF3C00"
-secondaryColor   : "#24B6DB"
-backgroundColor : "#F7F8F8"
-contrast : false
+- label: "Creative Direction"
+- label: "Art Direction"
+- label: "Graphic Design"
+- label: "Web Design"
+- label: "Web Development"
+primaryColor    : "#e51717"
+secondaryColor   : "#e5e5e5"
+backgroundColor : "#242424"
+contrast : true
 ---
 
-This was a fun one.
+## Where it all started
+Over my 8 years at Fresh Life I've served in multiple rules in the creative realm of the church, most recently spending the last two years as an Art & Creative Director. Under the leadership of Pastor Levi Lusko and his executive team I was given the opportunity at a young age to help craft and create the identity of the church. As I grew in my skills and talents the excellence of the church's brand grew as well.
 
-### The Back Story
+Being a church with a lot of things going on such as several unique series a year, multiple national events & tours, book releases, and an assortment of other church things I wanted Fresh Life to not just be recognized for a selection of colors and fonts, but more so for the quality of what we put out. The goal that if someone saw a post card for a series that had rocket ships on it or hearts or skulls, that the excellence of the product would inform them it was a product from Fresh Life, not just a logo.
 
-I've known Garner for some years as he was on my team over at Fresh Life during my time there. My passion has always been pulling out the potential in others, and I live for the moments when they fully realize their own. The look that dawns on them when they see what they are capable of, and with Garner those moments were always so rewarding.
+Creating an experience is something that has been a huge vision that was passed down by Pastor Levi. With that our goal was to never over-brand, to not let all the cats out of the bag on the first page or the first room. Walking someone through a publication, a website, or a building and by the end of the experience for them to have a greater understanding of who we are and what we're about was something I truly believed would create the best experience.
 
-I remember he would approach me asking what he should do with a certain animation, asking me what I would do, or what I want to see. At times the vision was strict, but my favorite moments were when I would give him a vague nudge, and see what amazing things he would come up with. Little did I know that years later he would be the one to give me a vague nudge to brand his freelance endeavors. I was proud to partner with him as he is on his own doing freelance and working on projects for big clients like Google and Intuit for **collect 5** down in Souther California.
+> A challenge is something to run towards not run from...
 
-I'm not always keen on posting work I do for friends but sometimes you just have fun with a project and need to share it with the world. So without further adue here is what we came up with for Garner and his freelance moniker *Garimate*.
 
-### Making Garnimate Stand Apart
+### More than just art
+My time at Fresh Life was constantly full of situations where I knew absolutely nothing about what was needed or required, but pushed my self to learn it and master it. This went from learning how to develop websites to setting up and running a broadcasting video mixer, music managing a radio station, designing stages and running a production. A challenge is something to run towards not run from, and that just comes with territory of being an avid learner and always chasing after some sense of perfection.
 
-When you've worked with someome for years you get a good idea of what they'd like and who they are, but there is still a lot that goes into a brand that you want to last. People change. Ideas change. So it was important we were on the same path. Here lies Garner, this freelance motion graphic artist, in Souther California where his talent is great but competition is high. How do we make Garnimate stand apart, how do we showcase who he is and what he has to offer.
+Being a Creative Director entailed more than just directing a team of creatives to create art and marketing materials. It derived of quality control of the smallest of assets to quality control and making sure the worship experiences met the creative threshold of what our Pastor desired. From book releases, to tours, to weekly church there was always more than enough going on at any given time. The busy and constantly changing work doesn't leave much room for air, but it never fails to excite.
 
-> "OOOOOOHHHHH YESSSSSSSSS I LOVE"
-> *-Garner Dumas*
+###### Physical work
+![Fall Afresh Album Artwork](http://media.saltagency.co/projects/fresh-life-church/images/cd-phys.jpg)
+![Alt text](http://media.saltagency.co/projects/fresh-life-church/images/shirt-phys.jpg)
 
-There were a few things I knew I wanted to accomplish:
+###### Series that made a mark
+We've had over 50 series in the past 9 years of Fresh Life and I've had the privilege to create, or help lead to the final outcome of over 40 of them, from 3 week message series to christmas and easter campaigns we always looked at ways to not do the same thing over and over again. With the vision from our Pastor and his constant nudge of pushing what we were capable we have created a pretty spectacular array of different pieces that convey the different emotions and subject matter of each series topic.
 
-####  It had to be fun
-Motion Graphics is arguably one of the most fun creative fields out there. Their job is to make design come to life, to add the pop and sizzle, to communicate through motion what design can't do standing still. Not saying it doesn't have it's own grind, but when people see good motion design their is always a reaction. So there was no way in hell we were making a brand that didn't reflect the fun and vibrance a good motionographer brings.
+![Alt text](http://media.saltagency.co/projects/fresh-life-church/images/six-series.jpg)
+![Alt text](http://media.saltagency.co/projects/fresh-life-church/images/acb-series.jpg)
 
-The brand for a motiongrapher is something that if done right, can be added to your arsenal. Motiographers a lot of time create a reel of their best work. A short video cutting from clip-to-clip of what they consider their best work. My favorite reels are the ones where the artist works in their own brand inbetween clips, operating as a narator to the reel. I wanted to make sure we could provide that for Garnimate, and not just give him the assets to do so, but giving him assets he could have fun with.
+![Alt text](http://media.saltagency.co/projects/fresh-life-church/images/gfg-series.jpg)
 
-#### It had to be organic
-Organic is an interesting word. It's hard to explain something being organic in a heavily digital world. But in a lot of our work we like the dichotomy of things, the beauty that conflict brings. So we wanted to add a layer to the brand that made it feel imperfect, that it felt drawn on a piece of paper on an artists whim. So we went to our iPad with Pencil in hand and begin to draw. I've never been the most talented typographer but I gave it a shot and landed on something I fell in love with. Using that Paper app by Fifty Three I was able to create the hand-drawn organic layer I wanted, without it feeling to heavily textured. It came out just the right amount *Adult Swim* and *Beach Pop*.
+###### Editorial work
+![Alt text](http://media.saltagency.co/projects/fresh-life-church/images/page1.jpg)
+![Alt text](http://media.saltagency.co/projects/fresh-life-church/images/page2.jpg)
+![Alt text](http://media.saltagency.co/projects/fresh-life-church/images/page3.jpg)
 
-#### It had to be fluid
-As I said previously it was important we gave Garner some assets he could have working with in his personal reel. So in every aspect we designed with fluidity in mind. Can we make something that looks as if it's moving while it sits on a peice of a paper? We wanted to create motion with the design, before any motion was applied. With the bean pattern and the liquid style we added to the type we feel we created just that.
+###### Websites
+[![Alt text](http://media.saltagency.co/projects/fresh-life-church/images/o2-site.png)](http://o2experience.com/)
+[![Alt text](http://media.saltagency.co/projects/fresh-life-church/images/flc-site.png)](http://freshlifechurch.com/)
 
-> "Gosh damnit you are the king of all design"
-> *-Garner Dumas*
+> Using creativity to reach the unreached.
 
-Though we can't agree with the above comment it was a kind gesture and It was a great a project. We can't wait and see what he does with his new brand.
+#### Thank You's
+Thank you to Pastor Levi Lusko for allowing me to be a part of Fresh Life's history and team and feeding my potential. Thank you Kevin Guido for continuing challenging me to do better and handing off the torch. Thank you to the whole creative team for making it one of the most fun, challenging, and rewarding jobs I've ever had. The work shown here couldn't have been done with out your hearts, minds, and hands.
