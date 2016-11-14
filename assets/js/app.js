@@ -351,7 +351,7 @@ if($("body").hasClass("Process")) {
 
   // Instagram
   var tween_instagram = new TimelineMax()
-  .staggerFromTo('.social-list div', 2, {
+  .staggerFromTo('.sl-pop div', 2, {
     transform: 'translate(0px, 100px)'
   }, {
     transform: 'translate(0px, 0px)'

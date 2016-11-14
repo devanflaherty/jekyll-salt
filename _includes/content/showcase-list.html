@@ -4,11 +4,13 @@
   {% assign pLimit = 9 %}
 {% endif %}
 
-{% assign featured = site.work | where:"feature","true" %}
+{% assign featured = site.work | where:"feature", "true" | first %}
 {% assign fSize = featured | size %}
 {% assign list = site.work | where:"feature","false" %}
 {% assign lSize = list | size %}
 {% assign size = fSize | plus: lSize %}
+{% assign homeList = site.work | sort: 'date' | reverse %}
+
 
 <section>
   <ul id="showcaseList" class="flex expanded">
@@ -37,7 +39,7 @@
     {% endif %}
 
     {% if page.title == "Home" %}
-      {% for item in site.work limit:3 %}
+      {% for item in homeList limit:3 %}
         {% include content/showcase-tile.html %}
       {% endfor %}
     {% endif %}

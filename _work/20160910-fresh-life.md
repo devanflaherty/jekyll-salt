@@ -2,24 +2,23 @@
 title: Fresh Life Church
 slug: fresh-life-church
 published: true
-
 subtitle  : Real, relevant, raw
 type      : Creative Director
-excerpt   : Fresh Life Church is a church led by Levi and Jennie Lusko with multiple campuses all across the state of Montana. Their vision is simple: to see those stranded in sin find life and liberty in Jesus Christ.
+excerpt   : "Fresh Life Church is a church led by Levi and Jennie Lusko with multiple campuses all across the state of Montana. Their vision is simple: to see those stranded in sin find life and liberty in Jesus Christ."
 feature  : false
 team:
- - name: Devan Flaherty
-   position: Creative Lead
--  name: Levi Lusko
-   position: Senior Pastor
--  name: Devan Flaherty
-   position: Creative Director
--  name: John Mark Creamer
-   position: Project Manager
--  name: Elisha Guido
-   position: Lead Designer
--  name: Tyler Bodway
-   position: Web Developer"
+- name: Devan Flaherty
+  position: Creative Lead
+- name: Levi Lusko
+  position: Senior Pastor
+- name: Devan Flaherty
+  position: Creative Director
+- name: John Mark Creamer
+  position: Project Manager
+- name: Elisha Guido
+  position: Lead Designer
+- name: Tyler Bodway
+  position: Web Developer"
 scope     :
 - label: "Creative Direction"
 - label: "Art Direction"
@@ -31,7 +30,6 @@ secondaryColor   : "#e5e5e5"
 backgroundColor : "#242424"
 contrast : true
 ---
-
 ## Where it all started
 Over my 8 years at Fresh Life I've served in multiple rules in the creative realm of the church, most recently spending the last two years as an Art & Creative Director. Under the leadership of Pastor Levi Lusko and his executive team I was given the opportunity at a young age to help craft and create the identity of the church. As I grew in my skills and talents the excellence of the church's brand grew as well.
 
