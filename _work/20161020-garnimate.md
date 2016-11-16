@@ -1,22 +1,22 @@
 ---
 title: Garnimate
-slug: garnimate
-published: true
-subtitle  : Motion Graphics & Sh*t
-type      : Branding & Logo Design
-excerpt   : Being a fun & exquisite motion graphics artist we created a brand we felt would do his work justice, and would lend it self to have movement and pop when utilized in his personal reel.
-feature  : true
+subtitle: Motion Graphics & Sh*t
+type: Branding & Logo Design
+excerpt: Being a fun & exquisite motion graphics artist we created a brand we felt
+  would do his work justice, and would lend it self to have movement and pop when
+  utilized in his personal reel.
+feature: true
 team:
- - name: Devan Flaherty
-   position: Creative Lead
-scope     :
+- name: Devan Flaherty
+  position: Creative Lead
+scope:
 - label: Branding
 - label: Design
 - label: Print
-primaryColor    : "#FF3C00"
-secondaryColor   : "#24B6DB"
-backgroundColor : "#F7F8F8"
-contrast : false
+primaryColor: "#FF3C00"
+secondaryColor: "#24B6DB"
+backgroundColor: "#F7F8F8"
+contrast: false
 ---
 
 <p>

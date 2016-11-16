@@ -1,28 +1,28 @@
 ---
 title: VeracityColab
-slug: veracity-colab
-published: true
-subtitle  : Agency Thinking. Video Focused.
-type      : Web Development
-excerpt   : With clients ranging from Google, Intuit, and Adobe, VeracityColab is a top of the line creative video agency. They more than just deliver exceptional live-action and motion graphic videos they create great ideas, and execute them.
-feature  : false
+subtitle: Agency Thinking. Video Focused.
+type: Web Development
+excerpt: With clients ranging from Google, Intuit, and Adobe, VeracityColab is a top
+  of the line creative video agency. They more than just deliver exceptional live-action
+  and motion graphic videos they create great ideas, and execute them.
+feature: false
 team:
- - name: Devan Flaherty
-   position: Web Development
- - name: Ian Nelson
-   position: Creative Direction
- - name: Paul Slemmer
-   position: Design & Oversight
- - name: Bethany Moore
-   position: Project Manager
-scope     :
+- name: Devan Flaherty
+  position: Web Development
+- name: Ian Nelson
+  position: Creative Direction
+- name: Paul Slemmer
+  position: Design & Oversight
+- name: Bethany Moore
+  position: Project Manager
+scope:
 - label: UI/UX
 - label: Front-End Web Development
 - label: Wordpress Development
-primaryColor    : "#2abbbe"
-secondaryColor   : "#222222"
-backgroundColor : "#f9f9f9"
-contrast : true
+primaryColor: "#2abbbe"
+secondaryColor: "#222222"
+backgroundColor: "#f9f9f9"
+contrast: true
 ---
 
 This was a fun one.

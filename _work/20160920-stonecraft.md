@@ -1,22 +1,22 @@
 ---
 title: Stonecraft
-slug: stonecraft
-published: true
-subtitle  : Granite. Marble. Quartz.
-type      : Branding & Logo Design
-excerpt   : StoneCraft is the leading custom manufacturer and install of granite, marble and quartz in the North West. Equipped with a state of the art CNC machine and only the finest materials from world renown manufacturers.
-feature  : false
+subtitle: Granite. Marble. Quartz.
+type: Branding & Logo Design
+excerpt: StoneCraft is the leading custom manufacturer and install of granite, marble
+  and quartz in the North West. Equipped with a state of the art CNC machine and only
+  the finest materials from world renown manufacturers.
+feature: false
 team:
- - name: Devan Flaherty
-   position: Creative Lead
-scope     :
+- name: Devan Flaherty
+  position: Creative Lead
+scope:
 - label: Creative Direction
 - label: Design
 - label: Print
-primaryColor    : "#0341F1"
-secondaryColor   : "#000010"
-backgroundColor : "#FFFFFF"
-contrast : true
+primaryColor: "#0341F1"
+secondaryColor: "#000010"
+backgroundColor: "#FFFFFF"
+contrast: true
 ---
 
 ![Alt text](http://media.saltagency.co/projects/stonecraft/images/cnc.jpg)
