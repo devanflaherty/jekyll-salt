@@ -1,5 +1,6 @@
 ---
 title: Stonecraft
+date: '2016-11-16 19:57:02'
 slug: stonecraft
 subtitle: Granite. Marble. Quartz.
 type: Branding & Logo Design

@@ -1,7 +1,7 @@
 ---
 title: Fresh Life Church
+date: '2016-11-16 00:00:00'
 slug: fresh-life-church
-date: '2016-11-16 19:40:08'
 subtitle: Real, relevant, raw
 type: Creative Director
 excerpt: 'Fresh Life Church is led by Levi and Jennie Lusko with multiple campuses
