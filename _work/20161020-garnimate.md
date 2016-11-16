@@ -1,5 +1,6 @@
 ---
 title: Garnimate
+date: '2016-11-16 19:57:02'
 slug: garnimate
 subtitle: Motion Graphics & Sh*t
 project-type: Branding & Logo Design

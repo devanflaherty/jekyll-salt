@@ -1,5 +1,6 @@
 ---
 title: VeracityColab
+date: '2016-11-16 19:57:02'
 slug: veracity-colab
 subtitle: Agency Thinking. Video Focused.
 project-type: Web Development
