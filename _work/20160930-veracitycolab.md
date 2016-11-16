@@ -2,7 +2,7 @@
 title: VeracityColab
 slug: veracity-colab
 subtitle: Agency Thinking. Video Focused.
-type: Web Development
+project-type: Web Development
 excerpt: With clients ranging from Google, Intuit, and Adobe, VeracityColab is a top
   of the line creative video agency. They more than just deliver exceptional live-action
   and motion graphic videos they create great ideas, and execute them.

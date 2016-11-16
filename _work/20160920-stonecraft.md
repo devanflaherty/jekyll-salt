@@ -2,7 +2,7 @@
 title: Stonecraft
 slug: stonecraft
 subtitle: Granite. Marble. Quartz.
-type: Branding & Logo Design
+project-type: Branding & Logo Design
 excerpt: StoneCraft is the leading custom manufacturer and install of granite, marble
   and quartz in the North West. Equipped with a state of the art CNC machine and only
   the finest materials from world renown manufacturers.

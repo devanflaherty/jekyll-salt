@@ -3,7 +3,7 @@ title: Fresh Life Church
 slug: fresh-life-church
 date: '2016-11-16 19:40:08'
 subtitle: Real, relevant, raw
-type: Creative Director
+project-type: Creative Director
 excerpt: 'Fresh Life Church is led by Levi and Jennie Lusko with multiple campuses
   all across the state of Montana. Their vision is simple: to see those stranded in
   sin find life and liberty in Jesus Christ.'
