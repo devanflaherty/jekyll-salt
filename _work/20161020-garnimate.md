@@ -1,5 +1,6 @@
 ---
 title: Garnimate
+slug: garnimate
 subtitle: Motion Graphics & Sh*t
 type: Branding & Logo Design
 excerpt: Being a fun & exquisite motion graphics artist we created a brand we felt

@@ -1,5 +1,6 @@
 ---
 title: Fresh Life Church
+slug: fresh-life-church
 date: '2016-11-16 19:40:08'
 subtitle: Real, relevant, raw
 type: Creative Director

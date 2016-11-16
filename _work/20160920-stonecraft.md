@@ -1,5 +1,6 @@
 ---
 title: Stonecraft
+slug: stonecraft
 subtitle: Granite. Marble. Quartz.
 type: Branding & Logo Design
 excerpt: StoneCraft is the leading custom manufacturer and install of granite, marble

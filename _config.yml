@@ -18,17 +18,11 @@ defaults:
     type: work
   values:
     layout: showcase-single
-email: hello@saltagency.co
-description: 'Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
 
-'
-baseurl: ''
-url: ''
 twitter_username: devanflaherty
 github_username: jekyll
 assetUrl: http://media.saltagency.co
+email: hello@saltagency.co
 phone: 480.388.1741
 markdown: kramdown
 theme: minima

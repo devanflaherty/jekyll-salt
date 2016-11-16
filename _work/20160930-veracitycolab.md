@@ -1,5 +1,6 @@
 ---
 title: VeracityColab
+slug: veracity-colab
 subtitle: Agency Thinking. Video Focused.
 type: Web Development
 excerpt: With clients ranging from Google, Intuit, and Adobe, VeracityColab is a top
