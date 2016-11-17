@@ -16,6 +16,17 @@ body {
 ** UTILITY CLASSES
 
 *************************/
+// Img reveal
+.flex-wrap {
+  img {
+    opacity: 0;
+    transition: all .75s ease;
+    &.reveal {
+      opacity: 1;
+    }
+  }
+
+}
 .contrast-bg {
   background-color: $black;
 }

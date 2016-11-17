@@ -1,4 +1,20 @@
 // Mobile Nav
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+
+   if (st > lastScrollTop){
+      $("#main-nav").removeClass('peek');
+   } else {
+     var offset = lastScrollTop - st;
+     if (st > 800) {
+       if (offset > 8) {
+         $("#main-nav").addClass('peek');
+       }
+     }
+   }
+   lastScrollTop = st;
+});
 
 // Where the magic happens
 $( ".nav-toggle" ).click(function() {

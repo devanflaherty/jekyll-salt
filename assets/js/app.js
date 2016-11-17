@@ -63,6 +63,22 @@ $( ".parallax" ).waitForImages(function() {
 });
 
 // Mobile Nav
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+
+   if (st > lastScrollTop){
+      $("#main-nav").removeClass('peek');
+   } else {
+     var offset = lastScrollTop - st;
+     if (st > 800) {
+       if (offset > 8) {
+         $("#main-nav").addClass('peek');
+       }
+     }
+   }
+   lastScrollTop = st;
+});
 
 // Where the magic happens
 $( ".nav-toggle" ).click(function() {
@@ -194,7 +210,7 @@ $('.talk h2').each(function(){
 
   var tween_talk = TweenMax
   .fromTo(currentTalkHead, 1, {
-    transform: 'translate(-60px, 0px)'
+    transform: 'translate(0px, -60px)'
   }, {
     transform: 'translate(0px, 0px)'
   });
@@ -205,6 +221,22 @@ $('.talk h2').each(function(){
     duration: "500"
   })
   .setTween(tween_talk)
+  // .addIndicators({name: "talk"})
+  .addTo(controller);
+});
+
+// Img reveal
+$('.flex-wrap img').each(function(){
+  var currentImg = this;
+  var trigger = currentImg;
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: trigger,
+    triggerHook: "onEnter",
+    duration: "190%"
+  })
+  //.setTween(tween_img)
+  .setClassToggle(currentImg, 'reveal')
   // .addIndicators({name: "talk"})
   .addTo(controller);
 });
@@ -237,22 +269,26 @@ var tween_header = new TimelineMax()
   }, {
     opacity: 1
   })
-  .fromTo('.page-links', 1, {
-    transform: 'translate(0px, 0px)'
+  .fromTo('#main-nav', 1, {
+    transform: "translate(0, 0)"
   }, {
-    transform: 'translate(0px, -240px)'
+    transform: "translate(0, -300px)"
   }, 0)
-  .fromTo('.subheader', 1, {
-    transform: 'translate(0px, 0px)'
+  .fromTo('#headline', 1, {
+    transform: "translate(0, 0)",
+    opacity: 1
   }, {
-    transform: 'translate(0px, 100px)'
+    transform: "translate(0, 150px)",
+    opacity: 0.5
   }, 0)
-  // .fromTo('.go-down', 1, {
-  //   opacity: 1
-  // }, {
-  //   opacity: 0
-  // }, 0)
-  ;
+  .fromTo('#subtitle', 1, {
+    transform: 'translate(0px, 0px)',
+    opacity: 1
+  }, {
+    transform: 'translate(0px, 150px)',
+    opacity: 0.5
+  }, 0)
+;
 
 var header = new ScrollMagic.Scene({
   triggerElement: '#header',
@@ -260,6 +296,15 @@ var header = new ScrollMagic.Scene({
   duration: "200%"
 })
 .setTween(tween_header)
+// .addIndicators({name: "overlay"})
+.addTo(controller);
+
+var header = new ScrollMagic.Scene({
+  triggerElement: '#header',
+  triggerHook: "onLeave",
+  offset: 500
+})
+.setClassToggle("#main-nav", 'transition')
 // .addIndicators({name: "overlay"})
 .addTo(controller);
 
@@ -335,7 +380,7 @@ if($("body").hasClass("Process")) {
   //bio pic
   var tween_bio = TweenMax
   .fromTo('.bio', 1, {
-    transform: 'translate(60px, 0px)'
+    transform: 'translate(0px, 60px)'
   }, {
     transform: 'translate(0px, 0px)'
   });

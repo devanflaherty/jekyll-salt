@@ -69,7 +69,7 @@ $('.talk h2').each(function(){
 
   var tween_talk = TweenMax
   .fromTo(currentTalkHead, 1, {
-    transform: 'translate(-60px, 0px)'
+    transform: 'translate(0px, -60px)'
   }, {
     transform: 'translate(0px, 0px)'
   });
@@ -80,6 +80,22 @@ $('.talk h2').each(function(){
     duration: "500"
   })
   .setTween(tween_talk)
+  // .addIndicators({name: "talk"})
+  .addTo(controller);
+});
+
+// Img reveal
+$('.flex-wrap img').each(function(){
+  var currentImg = this;
+  var trigger = currentImg;
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: trigger,
+    triggerHook: "onEnter",
+    duration: "190%"
+  })
+  //.setTween(tween_img)
+  .setClassToggle(currentImg, 'reveal')
   // .addIndicators({name: "talk"})
   .addTo(controller);
 });
