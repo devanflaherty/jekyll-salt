@@ -26,38 +26,56 @@ secondaryColor: "#222222"
 backgroundColor: "#f9f9f9"
 contrast: true
 ---
+![Alt text](http://media.saltagency.co/projects/veracity-colab/images/work-top.jpg)
 
-This was a fun one.
+## Make It Move
+There is nothing better than when you work for a client and you can't help but brag about them to your friends, and that is exactly what happened while working for **VeracityColab**. As they tote they are an *"Agency Thinking. Video Focused"* company, and it shows through their work. Originally they reached out to me to add a few new features and clean up a messy wordpress installation, but before work began they decided to run a complete overhaul.
 
-### The Back Story
+Being a video agency with exceptional live action and motion graphic work, "movement" and "speed" were key words in the new build. In shocking surprise they provided Salt with beautiful animated videos expressing exactly how they wanted the site to look, and move. Well... challenge accepted.
 
-I've known Garner for some years as he was on my team over at Fresh Life during my time there. My passion has always been pulling out the potential in others, and I live for the moments when they fully realize their own. The look that dawns on them when they see what they are capable of, and with Garner those moments were always so rewarding.
+<a href="http://veracitycolab.com" class="link">View the site</a>
 
-I remember he would approach me asking what he should do with a certain animation, asking me what I would do, or what I want to see. At times the vision was strict, but my favorite moments were when I would give him a vague nudge, and see what amazing things he would come up with. Little did I know that years later he would be the one to give me a vague nudge to brand his freelance endeavors. I was proud to partner with him as he is on his own doing freelance and working on projects for big clients like Google and Intuit for **collect 5** down in Souther California.
+> "Looking absolutely phenomenal."  
+> *- Ian Nelson, CCO*
 
-I'm not always keen on posting work I do for friends but sometimes you just have fun with a project and need to share it with the world. So without further adue here is what we came up with for Garner and his freelance moniker *Garimate*.
+![Alt text](http://media.saltagency.co/projects/veracity-colab/images/desktop-1.jpg)
+![Alt text](http://media.saltagency.co/projects/veracity-colab/images/desktop-2.jpg)
 
-### Making Garnimate Stand Apart
+#### Built from the ground up
+All too often do I meet clients who have been running their site off of pre-made themes, but have "hacked" them to pieces to get their end result. With an array of out dated plugins, and feature after feature, the site begins to form into a frakenstein held together by ribbon. No more themes, mo more "making it work", it was time they got a site built just for them.
 
-When you've worked with someome for years you get a good idea of what they'd like and who they are, but there is still a lot that goes into a brand that you want to last. People change. Ideas change. So it was important we were on the same path. Here lies Garner, this freelance motion graphic artist, in Souther California where his talent is great but competition is high. How do we make Garnimate stand apart, how do we showcase who he is and what he has to offer.
+> How do you build a great site that works just the way the client wants it? From the ground up.
 
-> "OOOOOOHHHHH YESSSSSSSSS I LOVE"
-> *-Garner Dumas*
+So first things first we knew we would be building a site that would grow and adapt with them. We love to strategize, so rather than just giving the client what they asked for we like to look down the road and foresee where they will be going. Building systems is part of the design process, a well built system is a well built design, so we took care as we built their back-end making sure we weren't just creating an experience that felt good to the audience, but felt good to the client as they manage and update their site. We want to create products people want to use, not endure.
 
-There were a few things I knew I wanted to accomplish:
+![Alt text](http://media.saltagency.co/projects/veracity-colab/images/mobile-showcase-2.jpg)
 
-####  It had to be fun
-Motion Graphics is arguably one of the most fun creative fields out there. Their job is to make design come to life, to add the pop and sizzle, to communicate through motion what design can't do standing still. Not saying it doesn't have it's own grind, but when people see good motion design their is always a reaction. So there was no way in hell we were making a brand that didn't reflect the fun and vibrance a good motionographer brings.
+#### Emphasizing the Client
+Being a video agency the focus had to be on the video, but more importantly it had to showcase great work done for great clients. Giving VeracityColab the ability to create posts that would capture the essence of their client as well as bringing attention and making it easy for prospective clients to see the work.
 
-The brand for a motiongrapher is something that if done right, can be added to your arsenal. Motiographers a lot of time create a reel of their best work. A short video cutting from clip-to-clip of what they consider their best work. My favorite reels are the ones where the artist works in their own brand inbetween clips, operating as a narator to the reel. I wanted to make sure we could provide that for Garnimate, and not just give him the assets to do so, but giving him assets he could have fun with.
+With custom colors, large hero images, and quick-playing their client's featured work, we gave the team the ability to create simple art directed posts. The design of their work posts simultaneously becomes a quick peek at the content they created, allowing the user to dive into each new client and the work VeracityColab created for them.
 
-#### It had to be organic
-Organic is an interesting word. It's hard to explain something being organic in a heavily digital world. But in a lot of our work we like the dichotomy of things, the beauty that conflict brings. So we wanted to add a layer to the brand that made it feel imperfect, that it felt drawn on a piece of paper on an artists whim. So we went to our iPad with Pencil in hand and begin to draw. I've never been the most talented typographer but I gave it a shot and landed on something I fell in love with. Using that Paper app by Fifty Three I was able to create the hand-drawn organic layer I wanted, without it feeling to heavily textured. It came out just the right amount *Adult Swim* and *Beach Pop*.
+<a href="http://veracitycolab.com/work" class="link">See their work posts</a>
 
-#### It had to be fluid
-As I said previously it was important we gave Garner some assets he could have working with in his personal reel. So in every aspect we designed with fluidity in mind. Can we make something that looks as if it's moving while it sits on a peice of a paper? We wanted to create motion with the design, before any motion was applied. With the bean pattern and the liquid style we added to the type we feel we created just that.
+#### Making Content Enjoyable
 
-> "Gosh damnit you are the king of all design"
-> *-Garner Dumas*
+Ease of use and making it an enjoyable experience to create content is something we take pride in. We don't want our clients to feel it's a task to update their site, and it's always the small and simple things that help make that happen.
 
-Though we can't agree with the above comment it was a kind gesture and It was a great a project. We can't wait and see what he does with his new brand.
+For our clients that create content daily we love to introduce them to MarkDown, a language create by John Gruber that allows content creation and the formatting of that content to happen simultaneously. We provide a WYSIWYG, but with MarkDown any of VeracityColab's authors can write and format their post on any device, where ever they are, with out having to worry about buggy UI elements. The biggest win is this not only makes content creation more light weight it makes it the focus. Authors can tend to get caught up in the formatting of a post when they should just be focusing on what it says and what it shows.
+
+We gave VeracityColab the ability to write and format their posts with MarkDown which was a whole new direction for them. They were previously running off Visual Composer which allows a user to create an endless array of possibilities per page or post. It's big, and it's bloated. The first thing I knew that had to go was VC, and they were happy to see it go. Even more so they were happy to use MarkDown and adapt into their daily routine.
+
+Last but not least we love suping up MarkDown with a little Jquery love. In marriage with our Foundation Responsive framework we find all the videos in the post and wrap them in a column and row. Immediate video siblings are put into the same row allowing the author to create images that can be presented side-by-side. If they want an image to be full width they just have to input with a simple line break and it will be in its own row. No classes necessary, no UI trickery, just entering the image tag where you want it to go and voila.
+
+###### "Happy" Makes for Great Work
+More than anything working with the team at VeracityColab has been a blast. We are incredibly thankful for the opportunity to partner with them, help magnify their reach and show off their great work. Please take the time to check out their work and get educated on what they can offer you, and keep your eye on the site as we are weekly tweaking, refining and adding new features.
+
+<a href="http://veracitycolab.com" class="link">veracitycolab.com</a>
+
+![Alt text](http://media.saltagency.co/projects/veracity-colab/images/mobile-showcase-1.jpg)
+
+#### Curious about our site?
+
+To read more about the **Salt Agency** site and how we created it click the link below.
+
+<a href="http://blog.saltagency.co/a-bit-about-the-site/" class="link">Behind Our Site</a>
