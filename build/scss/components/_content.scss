@@ -30,10 +30,6 @@ $cbmargin : 80px;
   h3 {
     margin: $cbmargin/2 0;
   }
-  h4 {
-    font-family: $sans800;
-    letter-spacing: -1px;
-  }
   h5 {
     text-transform: uppercase;
     text-align: center;
@@ -51,7 +47,7 @@ $cbmargin : 80px;
   p {
     width: 100%;
     margin-bottom: $cbmargin/2;
-    line-height: 1.75;
+    line-height: 1.85;
     strong {
       font-family: $sans800;
       font-weight: 200;
@@ -81,7 +77,6 @@ $cbmargin : 80px;
         margin-left: 32px;
         margin-bottom: 12px;
         margin-top: 0px;
-        font-size: 18px;
         color: $medium-gray;
         font-family: $sans400;
         border-color: $medium-gray;
@@ -97,9 +92,11 @@ $cbmargin : 80px;
     margin: $cbmargin 0;
     padding-top: 4px;
     font-size: 24px;
+    @include breakpoint(medium) {
+      transform: translate(-40px, 0);
+    }
     p {
-      color: $medium-gray;
-      line-height: 26px;
+      line-height: 1.5;
       padding: 0;
       margin: 0;
     }

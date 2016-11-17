@@ -4,43 +4,33 @@
 
 *************************/
 #footer {
-  padding: 30px 0 15px;
-  background: $offWhite;
+  position: absolute;
+  margin-top: -58px;
+  padding: 20px 0 15px;
   position: relative;
-  @include breakpoint(medium) {
-    padding: 60px 0;
-  }
+  background: rgba($white, 0.1);
   .branding {
     text-align: center;
     p {
       float: left;
-      line-height: 30px;
+      line-height: 1.33;
       text-transform: uppercase;
-      font-family: $sans800;
-      font-size: 12px;
-      color: darken($secondaryColor, 5%);
+      font-family: $sans600;
+      font-size: 11px;
+      color: rgba($black, 0.75);
       letter-spacing: 1px;
       margin: 0;
-      @include breakpoint(medium) {
-        font-size: 18px;
-        line-height: 60px;
-      }
+      padding: 0 12px;
     }
     h3 {
       float: left;
       font-family: $serif;
-      font-size: 30px;
-      line-height: .8;
+      font-size: 20px;
+      line-height: .75;
       letter-spacing: 4px!important;
       text-transform: uppercase;
-      padding: 0 12px 0 18px;
-      @include breakpoint(medium) {
-        font-size: 56px;
-        line-height: 1.2;
-        letter-spacing: 6px!important;
-        padding: 0 36px 0 36px;
-        margin: 0;
-      }
+      margin-left: 4px;
+      color: $black;
     }
   }
 }

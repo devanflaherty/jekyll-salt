@@ -17,6 +17,8 @@
 {% if page.title == 'Process' %}
 <script src="/assets/js/instafeed.js/instafeed.min.js" ></script>
 
+{% assign instaImage = '{{image}}' %}
+{% assign instaLink = '{{link}}' %}
 <script type="text/javascript">
   var feed = new Instafeed({
     get: 'user',
@@ -24,7 +26,7 @@
     accessToken: '1311074.1677ed0.850de3502c084473b6465020511324b1',
     resolution: 'standard_resolution',
     limit: 5,
-    template: '<div class="columns"><a href="{{link}}" target="_blank"><img class="insta-link" src="{{image}}" /></a></div>'
+    template: '<div class="columns"><a href="{{instaLink}}" target="_blank"><img class="insta-link" src="{{instaImage}}" /></a></div>'
     //userId: '1940995648',
     //accessToken: '1940995648.1677ed0.b277c5ba0c4146f4b5ef4c213c00bb08'
   });

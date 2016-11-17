@@ -110,7 +110,7 @@ $header-sizes: (
     'h1': 24,
     'h2': 20,
     'h3': 19,
-    'h4': 18,
+    'h4': 21,
     'h5': 17,
     'h6': 16,
   ),
@@ -124,7 +124,7 @@ $header-sizes: (
   ),
 );
 $header-color: $black;
-$header-lineheight: 1.4;
+$header-lineheight: 1.6;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
