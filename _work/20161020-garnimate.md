@@ -20,7 +20,12 @@ secondaryColor: "#24B6DB"
 backgroundColor: "#F7F8F8"
 contrast: false
 ---
-![](http://media.saltagency.co/projects/garnimate/images/logo-site-top.png){:.show-for-medium}![](http://media.saltagency.co/projects/garnimate/images/panel-1-Left.png){:.hide-for-medium}
+<p>
+  <img class="show-for-medium" src="http://media.saltagency.co/projects/garnimate/images/logo-site-top.png">
+</p>
+<p>
+  <img class="hide-for-medium" src="http://media.saltagency.co/projects/garnimate/images/panel-1-Left.png">
+</p>
 
 This was a fun one.
 
@@ -32,7 +37,11 @@ I remember he would approach me asking what he should do with a certain animatio
 
 I'm not always keen on posting work I do for friends but sometimes you just have fun with a project and need to share it with the world. So without further a due here is what we came up with for Garner and his freelance moniker _Garnimate_.
 
-![](http://media.saltagency.co/projects/garnimate/images/panel-1-Left.png){:.show-for-medium}![Alt text](http://media.saltagency.co/projects/garnimate/images/panel-1-right.png) ![Alt text](http://media.saltagency.co/projects/garnimate/images/guide-right.png)
+<p>
+  <img class="show-for-medium" src="http://media.saltagency.co/projects/garnimate/images/panel-1-Left.png">
+</p>
+
+![Alt text](http://media.saltagency.co/projects/garnimate/images/panel-1-right.png) ![Alt text](http://media.saltagency.co/projects/garnimate/images/guide-right.png)
 
 ### Making Garnimate Stand Apart
 
