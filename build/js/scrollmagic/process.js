@@ -70,7 +70,7 @@ if($("body").hasClass("Process")) {
   //bio pic
   var tween_bio = TweenMax
   .fromTo('.bio', 1, {
-    transform: 'translate(60px, 0px)'
+    transform: 'translate(0px, -40px)'
   }, {
     transform: 'translate(0px, 0px)'
   });

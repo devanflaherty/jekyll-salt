@@ -1,0 +1,32 @@
+---
+title: Salt Agency
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+  work:
+    title: Work
+    output: true
+    permalink: "/showcase/:title/"
+defaults:
+- scope:
+    path: ''
+    type: work
+  values:
+    layout: showcase-single
+twitter_username: devanflaherty
+github_username: jekyll
+assetUrl: http://media.saltagency.co
+email: hello@saltagency.co
+phone: 480.388.1741
+markdown: kramdown
+theme: minima
+gems:
+- jekyll-feed
+exclude:
+- Gemfile
+- Gemfile.lock
