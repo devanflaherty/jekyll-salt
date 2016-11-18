@@ -1766,7 +1766,9 @@ html, body {
   height: 100% !important;
   height: auto; }
   html.connectFixed, html.navFixed, body.connectFixed, body.navFixed {
-    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    max-height: 100%;
     width: 100%; }
 
 body {
@@ -2032,13 +2034,19 @@ section {
     padding: 0 20px;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto; }
+    #header section.navigation.peek {
+      transform: translate(0, 0) !important; }
     #header section.navigation h1#logoTag {
-      position: absolute;
+      position: fixed;
       z-index: 200;
       left: 20px;
       top: 0;
       width: 80px;
       height: 140px; }
+      #header section.navigation h1#logoTag.peek {
+        transform: translate(0, 0) !important; }
+      #header section.navigation h1#logoTag.transition {
+        transition: all 0.5s ease; }
       #header section.navigation h1#logoTag a {
         display: block;
         background: #fefefe;
@@ -2396,7 +2404,8 @@ section {
 
 @media screen and (max-width: 39.9375em) {
   .Process #whois .bio {
-    max-width: 280px; } }
+    max-width: 280px;
+    margin-bottom: 20px; } }
 
 .Process #whois span {
   color: #95b4c0; }
@@ -2694,7 +2703,7 @@ a.link {
       transform: translateX(0); }
 
 .full-nav {
-  position: absolute;
+  position: fixed;
   top: -100%;
   left: 0;
   z-index: 60;
@@ -2783,6 +2792,13 @@ a.link {
     align-items: center; }
     @media screen and (min-width: 40em) {
       #showcaseList li {
+        -ms-flex: 1 0 50%;
+        flex: 1 0 50%; }
+        #showcaseList li:last-child {
+          -ms-flex: 1 0 33%;
+          flex: 1 0 33%; } }
+    @media screen and (min-width: 64em) {
+      #showcaseList li {
         -ms-flex: 1 0 33.33%;
         flex: 1 0 33.33%; }
         #showcaseList li:last-child {
@@ -2826,12 +2842,12 @@ a.link {
             padding: 20px; } }
       #showcaseList li .project-details h3 {
         position: absolute;
-        left: 0;
+        left: 40px;
         right: 0;
-        bottom: 40px;
+        bottom: 60px;
         margin: 0 auto;
         color: #fefefe;
-        text-align: center;
+        text-align: left;
         font-size: 40px;
         line-height: 0.9 !important;
         letter-spacing: 1.5px !important;
@@ -2842,35 +2858,28 @@ a.link {
         @media screen and (min-width: 40em) {
           #showcaseList li .project-details h3 {
             font-size: 40px;
-            bottom: 40px; } }
+            bottom: 40px;
+            left: 20px; } }
         @media screen and (min-width: 64em) {
           #showcaseList li .project-details h3 {
             font-size: 38px; } }
       #showcaseList li .project-details h5 {
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: 40px;
+        left: 40px;
         right: 0;
         margin: 0 auto;
-        padding: 150px 0 0 0;
-        width: 100px;
-        height: 180px;
         display: inline-block;
-        color: #fefefe;
+        color: rgba(254, 254, 254, 0.85);
         font-family: "GothamHTFMedium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
         font-size: 12px;
-        text-align: center;
-        background: #222220;
+        text-align: left;
         transition: transform .75s ease;
         transform: translate(0, 100px); }
         @media screen and (min-width: 40em) {
           #showcaseList li .project-details h5 {
-            padding: 120px 0 0 0;
-            height: 150px; } }
-        @media screen and (min-width: 64em) {
-          #showcaseList li .project-details h5 {
-            padding: 150px 0 0 0;
-            height: 180px; } }
+            bottom: 20px;
+            left: 20px; } }
     #showcaseList li img {
       display: block;
       margin: 0;

@@ -69,11 +69,13 @@ $(window).scroll(function(event){
 
    if (st > lastScrollTop){
       $("#main-nav").removeClass('peek');
+      $("#logoTag").removeClass('peek');
    } else {
      var offset = lastScrollTop - st;
      if (st > 800) {
        if (offset > 8) {
          $("#main-nav").addClass('peek');
+         $("#logoTag").addClass('peek');
        }
      }
    }
@@ -81,17 +83,17 @@ $(window).scroll(function(event){
 });
 
 // Where the magic happens
-$( ".nav-toggle" ).click(function() {
+$( ".nav-toggle" ).click(function(e) {
   $(this).toggleClass( "active" );
 
-  $('html').toggleClass( "navFixed" );
   $('.full-nav').toggleClass("visible");
-  $('.logo').toggleClass( "black" );
+  $('body').toggleClass( "navFixed" );
+
 });
 $(window).resize(function(){
   if ($(window).width() >= 640){
     $('.nav-toggle').removeClass( "active" );
-    $('html').removeClass( "navFixed" );
+    $('body').removeClass( "navFixed" );
     $('.full-nav').removeClass("visible");
     $('.logo').removeClass( "black" );
   }
@@ -274,6 +276,11 @@ var tween_header = new TimelineMax()
   }, {
     transform: "translate(0, -300px)"
   }, 0)
+  .fromTo('#logoTag', 1, {
+    transform: "translate(0, 0)"
+  }, {
+    transform: "translate(0, -300px)"
+  }, 0)
   .fromTo('#headline', 1, {
     transform: "translate(0, 0)",
     opacity: 1
@@ -299,12 +306,21 @@ var header = new ScrollMagic.Scene({
 // .addIndicators({name: "overlay"})
 .addTo(controller);
 
-var header = new ScrollMagic.Scene({
+var navTran = new ScrollMagic.Scene({
   triggerElement: '#header',
   triggerHook: "onLeave",
   offset: 500
 })
 .setClassToggle("#main-nav", 'transition')
+// .addIndicators({name: "overlay"})
+.addTo(controller);
+
+var logoTran = new ScrollMagic.Scene({
+  triggerElement: '#header',
+  triggerHook: "onLeave",
+  offset: 500
+})
+.setClassToggle("#logoTag", 'transition')
 // .addIndicators({name: "overlay"})
 .addTo(controller);
 
@@ -380,7 +396,7 @@ if($("body").hasClass("Process")) {
   //bio pic
   var tween_bio = TweenMax
   .fromTo('.bio', 1, {
-    transform: 'translate(0px, 60px)'
+    transform: 'translate(0px, -40px)'
   }, {
     transform: 'translate(0px, 0px)'
   });

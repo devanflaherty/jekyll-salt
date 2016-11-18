@@ -20,6 +20,7 @@
     .bio {
       @include breakpoint(small only) {
         max-width: 280px;
+        margin-bottom: 20px;
       }
     }
     span {

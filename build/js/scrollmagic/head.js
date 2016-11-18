@@ -10,6 +10,11 @@ var tween_header = new TimelineMax()
   }, {
     transform: "translate(0, -300px)"
   }, 0)
+  .fromTo('#logoTag', 1, {
+    transform: "translate(0, 0)"
+  }, {
+    transform: "translate(0, -300px)"
+  }, 0)
   .fromTo('#headline', 1, {
     transform: "translate(0, 0)",
     opacity: 1
@@ -35,11 +40,20 @@ var header = new ScrollMagic.Scene({
 // .addIndicators({name: "overlay"})
 .addTo(controller);
 
-var header = new ScrollMagic.Scene({
+var navTran = new ScrollMagic.Scene({
   triggerElement: '#header',
   triggerHook: "onLeave",
   offset: 500
 })
 .setClassToggle("#main-nav", 'transition')
+// .addIndicators({name: "overlay"})
+.addTo(controller);
+
+var logoTran = new ScrollMagic.Scene({
+  triggerElement: '#header',
+  triggerHook: "onLeave",
+  offset: 500
+})
+.setClassToggle("#logoTag", 'transition')
 // .addIndicators({name: "overlay"})
 .addTo(controller);
