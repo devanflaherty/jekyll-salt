@@ -2034,20 +2034,24 @@ section {
     padding: 0 20px;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto; }
-    #header section.navigation.peek {
-      transform: translate(0, 0) !important; }
     #header section.navigation h1#logoTag {
-      position: fixed;
+      position: absolute;
       z-index: 200;
       left: 20px;
       top: 0;
       width: 80px;
-      height: 140px; }
+      height: 140px;
+      transition: all 0.5s ease; }
       #header section.navigation h1#logoTag.peek {
-        transform: translate(0, 0) !important; }
-      #header section.navigation h1#logoTag.transition {
-        transition: all 0.5s ease; }
+        position: fixed;
+        top: -150px;
+        transform: translate(0, 150px) !important; }
+      #header section.navigation h1#logoTag.peek-hide {
+        position: fixed;
+        top: -150px;
+        transform: translate(0, 0px) !important; }
       #header section.navigation h1#logoTag a {
+        position: relative;
         display: block;
         background: #fefefe;
         width: 80px;
@@ -2067,20 +2071,26 @@ section {
           text-transform: uppercase;
           color: #222220 !important; }
     #header section.navigation nav#main-nav {
-      position: fixed;
+      position: absolute;
       right: 20px;
+      top: 0;
       z-index: 100;
-      text-align: right; }
+      text-align: right;
+      transition: transform 0.5s ease; }
       @media screen and (max-width: 39.9375em) {
         #header section.navigation nav#main-nav {
           height: 50px; } }
       @media screen and (min-width: 40em) {
         #header section.navigation nav#main-nav {
           padding: 20px 0; } }
-      #header section.navigation nav#main-nav.transition {
-        transition: all 0.5s ease; }
       #header section.navigation nav#main-nav.peek {
-        transform: translate(0, 0) !important; }
+        position: fixed;
+        top: -150px;
+        transform: translate(0, 150px) !important; }
+      #header section.navigation nav#main-nav.peek-hide {
+        position: fixed;
+        top: -150px;
+        transform: translate(0, 0px) !important; }
       #header section.navigation nav#main-nav ul {
         list-style-type: none;
         padding: 0 20px 0 0;
@@ -2842,9 +2852,9 @@ a.link {
             padding: 20px; } }
       #showcaseList li .project-details h3 {
         position: absolute;
-        left: 40px;
+        bottom: 40px;
+        left: 20px;
         right: 0;
-        bottom: 60px;
         margin: 0 auto;
         color: #fefefe;
         text-align: left;
@@ -2857,16 +2867,14 @@ a.link {
         transform: translate(0, -100px); }
         @media screen and (min-width: 40em) {
           #showcaseList li .project-details h3 {
-            font-size: 40px;
-            bottom: 40px;
-            left: 20px; } }
+            font-size: 40px; } }
         @media screen and (min-width: 64em) {
           #showcaseList li .project-details h3 {
             font-size: 38px; } }
       #showcaseList li .project-details h5 {
         position: absolute;
-        bottom: 40px;
-        left: 40px;
+        bottom: 20px;
+        left: 20px;
         right: 0;
         margin: 0 auto;
         display: inline-block;
@@ -2876,10 +2884,6 @@ a.link {
         text-align: left;
         transition: transform .75s ease;
         transform: translate(0, 100px); }
-        @media screen and (min-width: 40em) {
-          #showcaseList li .project-details h5 {
-            bottom: 20px;
-            left: 20px; } }
     #showcaseList li img {
       display: block;
       margin: 0;

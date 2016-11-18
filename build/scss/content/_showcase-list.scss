@@ -60,8 +60,9 @@
       }
       h3 {
         position: absolute;
-        left: 40px; right: 0;
-        bottom: 60px;
+        bottom: 40px;
+        left: 20px;
+        right: 0;
         margin: 0 auto;
         color: $white;
         text-align: left;
@@ -74,8 +75,6 @@
         transform: translate(0, -100px);
         @include breakpoint(medium) {
           font-size: 40px;
-          bottom: 40px;
-          left: 20px;
         }
         @include breakpoint(large) {
           font-size: 38px;
@@ -83,8 +82,8 @@
       }
       h5 {
         position: absolute;
-        bottom: 40px;
-        left: 40px; right: 0;
+        bottom: 20px;
+        left: 20px; right: 0;
         margin: 0 auto;
         display: inline-block;
         color: rgba($white, 0.85);
@@ -93,13 +92,6 @@
         text-align: left;
         transition: transform .75s ease;
         transform: translate(0, 100px);
-        @include breakpoint(medium) {
-          bottom: 20px;
-          left: 20px;
-        }
-        @include breakpoint(large) {
-
-        }
       }
     }
     img {

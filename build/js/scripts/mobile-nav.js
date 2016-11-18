@@ -4,12 +4,16 @@ $(window).scroll(function(event){
    var st = $(this).scrollTop();
 
    if (st > lastScrollTop){
-      $("#main-nav").removeClass('peek');
-      $("#logoTag").removeClass('peek');
+     if(st > 150) {
+      $("#main-nav").addClass('peek-hide');
+      $("#logoTag").addClass('peek-hide');
+     }
    } else {
      var offset = lastScrollTop - st;
-     if (st > 800) {
+     if(st > 300) {
        if (offset > 8) {
+         $("#main-nav").removeClass('peek-hide');
+         $("#logoTag").removeClass('peek-hide');
          $("#main-nav").addClass('peek');
          $("#logoTag").addClass('peek');
        }

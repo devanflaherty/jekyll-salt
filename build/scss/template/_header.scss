@@ -34,23 +34,26 @@
     width: 100%;
     padding: 0 20px;
     flex: 0 1 auto;
-    &.peek {
-      transform: translate(0,0)!important;
-    }
     h1#logoTag {
-      position: fixed;
+      position: absolute;
       z-index: 200;
       left: 20px;
       top: 0;
       width: 80px;
       height: 140px;
+      transition: all 0.5s ease;
       &.peek {
-        transform: translate(0,0)!important;
+        position: fixed;
+        top: -150px;
+        transform: translate(0, 150px)!important;
       }
-      &.transition {
-        transition: all 0.5s ease;
+      &.peek-hide {
+        position: fixed;
+        top: -150px;
+        transform: translate(0, 0px)!important;
       }
       a {
+        position: relative;
         display: block;
         background: $white;
         width: 80px;
@@ -75,21 +78,27 @@
       }
     }
     nav#main-nav {
-      position: fixed;
+      position: absolute;
       right: 20px;
+      top: 0;
       z-index: 100;
       text-align: right;
+      transition: transform 0.5s ease;
       @include breakpoint(small only) {
         height: 50px;
       }
       @include breakpoint(medium) {
         padding: 20px 0;
       }
-      &.transition {
-        transition: all 0.5s ease;
-      }
       &.peek {
-        transform: translate(0,0)!important;
+        position: fixed;
+        top: -150px;
+        transform: translate(0, 150px)!important;
+      }
+      &.peek-hide {
+        position: fixed;
+        top: -150px;
+        transform: translate(0, 0px)!important;
       }
       ul {
         list-style-type: none;

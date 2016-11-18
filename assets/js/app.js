@@ -68,12 +68,16 @@ $(window).scroll(function(event){
    var st = $(this).scrollTop();
 
    if (st > lastScrollTop){
-      $("#main-nav").removeClass('peek');
-      $("#logoTag").removeClass('peek');
+     if(st > 150) {
+      $("#main-nav").addClass('peek-hide');
+      $("#logoTag").addClass('peek-hide');
+     }
    } else {
      var offset = lastScrollTop - st;
-     if (st > 800) {
+     if(st > 300) {
        if (offset > 8) {
+         $("#main-nav").removeClass('peek-hide');
+         $("#logoTag").removeClass('peek-hide');
          $("#main-nav").addClass('peek');
          $("#logoTag").addClass('peek');
        }
@@ -271,29 +275,19 @@ var tween_header = new TimelineMax()
   }, {
     opacity: 1
   })
-  .fromTo('#main-nav', 1, {
-    transform: "translate(0, 0)"
-  }, {
-    transform: "translate(0, -300px)"
-  }, 0)
-  .fromTo('#logoTag', 1, {
-    transform: "translate(0, 0)"
-  }, {
-    transform: "translate(0, -300px)"
-  }, 0)
   .fromTo('#headline', 1, {
     transform: "translate(0, 0)",
     opacity: 1
   }, {
     transform: "translate(0, 150px)",
-    opacity: 0.5
+    opacity: 0
   }, 0)
   .fromTo('#subtitle', 1, {
     transform: 'translate(0px, 0px)',
     opacity: 1
   }, {
     transform: 'translate(0px, 150px)',
-    opacity: 0.5
+    opacity: 0
   }, 0)
 ;
 
@@ -306,23 +300,24 @@ var header = new ScrollMagic.Scene({
 // .addIndicators({name: "overlay"})
 .addTo(controller);
 
-var navTran = new ScrollMagic.Scene({
-  triggerElement: '#header',
-  triggerHook: "onLeave",
-  offset: 500
-})
-.setClassToggle("#main-nav", 'transition')
-// .addIndicators({name: "overlay"})
-.addTo(controller);
-
-var logoTran = new ScrollMagic.Scene({
-  triggerElement: '#header',
-  triggerHook: "onLeave",
-  offset: 500
-})
-.setClassToggle("#logoTag", 'transition')
-// .addIndicators({name: "overlay"})
-.addTo(controller);
+// NAV PARALLAX
+// var headerNavParallax = new ScrollMagic.Scene({
+//   triggerElement: '#main',
+//   triggerHook: "onLeave",
+//   offset: 100
+// })
+// .setClassToggle("#main-nav", 'fixed')
+// .addIndicators({name: "navLax"})
+// .addTo(controller);
+//
+// var headerNavParallax = new ScrollMagic.Scene({
+//   triggerElement: '#main',
+//   triggerHook: "onLeave",
+//   offset: 100
+// })
+// .setClassToggle("#logoTag", 'fixed')
+// .addIndicators({name: "navLax"})
+// .addTo(controller);
 
 // Tweens
 //heart
