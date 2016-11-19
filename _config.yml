@@ -1,8 +1,7 @@
 ---
 title: Salt Agency
 timezone: UTC
-source: src/
-destination: public/
+exclude: ['build/', 'node_modules/', 'bower_components/']
 collections:
   posts:
     title: Posts
