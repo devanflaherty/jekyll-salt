@@ -1,6 +1,8 @@
 ---
 title: Salt Agency
 timezone: UTC
+source: src/
+destination: public/
 collections:
   posts:
     title: Posts
