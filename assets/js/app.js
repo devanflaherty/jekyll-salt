@@ -74,13 +74,11 @@ $(window).scroll(function(event){
      }
    } else {
      var offset = lastScrollTop - st;
-     if(st > 300) {
-       if (offset > 4) {
-         $("#main-nav").removeClass('peek-hide');
-         $("#logoTag").removeClass('peek-hide');
-         $("#main-nav").addClass('peek');
-         $("#logoTag").addClass('peek');
-       }
+     if (offset > 2) {
+       $("#main-nav").removeClass('peek-hide');
+       $("#logoTag").removeClass('peek-hide');
+       $("#main-nav").addClass('peek');
+       $("#logoTag").addClass('peek');
      }
    }
    lastScrollTop = st;

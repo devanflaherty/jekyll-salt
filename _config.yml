@@ -1,7 +1,6 @@
 ---
 title: Salt Agency
 timezone: UTC
-exclude: ['build/', 'node_modules/', 'bower_components/']
 collections:
   posts:
     title: Posts
@@ -32,3 +31,6 @@ gems:
 exclude:
 - Gemfile
 - Gemfile.lock
+- build
+- node_modules
+- bower_components
