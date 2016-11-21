@@ -7,7 +7,7 @@ window.onresize = function(event) {
   resizeDiv();
 };
 function resizeDiv() {
-  vph = $(window).height();
+  var vph = $(window).height();
   $('.vh').css({'height': vph});
 }
 

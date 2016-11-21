@@ -1,14 +1,21 @@
 {
   "name": "Salt",
   "main": [
-    "assets/stylesheets/foundation.css",
-    "assets/javascript/foundation.js"
+    "assets/css/styles.css",
+    "assets/js/app.js"
   ],
   "ignore": [],
   "dependencies": {
     "foundation-sites": "~6.2.0",
     "motion-ui": "~1.2.0",
     "fontawesome": "~4.5.0",
-    "scrollmagic": "^2.0.5"
+    "scrollmagic": "^2.0.5",
+    "instafeed.js": "^1.4.1",
+    "jribbble": "^2.0.4",
+    "jquery": "^3.1.1",
+    "gsap": "^1.19.0"
+  },
+  "resolutions": {
+    "jquery": "~2.2.0"
   }
 }
