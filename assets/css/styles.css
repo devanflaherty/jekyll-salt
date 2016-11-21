@@ -2241,13 +2241,13 @@ section {
           padding: 20px 0; } }
       #header section.navigation nav#main-nav.peek {
         position: fixed;
-        top: -150px;
+        top: -170px;
         -webkit-transform: translate(0, 150px) !important;
             -ms-transform: translate(0, 150px) !important;
                 transform: translate(0, 150px) !important; }
       #header section.navigation nav#main-nav.peek-hide {
         position: fixed;
-        top: -150px;
+        top: -170px;
         -webkit-transform: translate(0, 0px) !important;
             -ms-transform: translate(0, 0px) !important;
                 transform: translate(0, 0px) !important; }
