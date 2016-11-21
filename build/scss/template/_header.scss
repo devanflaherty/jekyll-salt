@@ -92,12 +92,12 @@
       }
       &.peek {
         position: fixed;
-        top: -170px;
-        transform: translate(0, 150px)!important;
+        top: -150px;
+        transform: translate(0, 170px)!important;
       }
       &.peek-hide {
         position: fixed;
-        top: -170px;
+        top: -150px;
         transform: translate(0, 0px)!important;
       }
       ul {
