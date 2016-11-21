@@ -1,8 +1,8 @@
 {% if page.layout == 'showcase-single' %}
   {% assign pageTitleSub = page.title %}
   {% assign description = page.subtitle | append: ' | ' | append: page.excerpt %}
-  {% assign imageSrc = site.assetUrl | append: '/projects/' | append: page.permalink | append: '/thumbnail.jpg' %}
-  {% assign unFurl = 'showcase/' | append: page.permalink %}
+  {% assign imageSrc = site.assetUrl | append: '/projects/' | append: page.slug | append: '/thumbnail.jpg' %}
+  {% assign unFurl = '/showcase/' | append: page.slug %}
 {% else %}
   {% assign pageTitleSub = page.title %}
   {% assign description = "Salt Agency: a digital agency specializing in branding, graphic design and web development in Kalispell, Montana." %}
@@ -21,7 +21,7 @@
 <meta name="robots" content="all">
 <meta name="zipcode" content="59901">
 <link rel="image_src" href="{{ imageSrc }}">
-<meta property="og:url" content="http://www.saltagency.co/{{ unFurl }}" />
+<meta property="og:url" content="http://www.saltagency.co{{ unFurl }}" />
 <meta property="og:image" content="{{ imageSrc }}" />
 <meta property="og:title" content="{{ pageTitle }}" />
 <meta property="og:description" content="{{ description }}" />
@@ -32,7 +32,7 @@
 <meta name="twitter:title" value="{{ pageTitle }}" />
 <meta name="twitter:description" value="{{ description }}" />
 <meta name="twitter:image" content="{{ imageSrc }}" />
-<meta name="twitter:url" value="http://www.saltagency.co/{{ unFurl }}" />
+<meta name="twitter:url" value="http://www.saltagency.co{{ unFurl }}" />
 
 <link rel="icon" href="/assets/images/fav/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/fav/apple-touch-icon-57x57.png" />
