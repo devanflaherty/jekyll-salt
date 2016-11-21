@@ -49,7 +49,7 @@ When you've worked with someone for years you get a good idea of what they'd lik
 
 ![Alt text](http://media.saltagency.co/projects/garnimate/images/panel-2-left.png) ![Alt text](http://media.saltagency.co/projects/garnimate/images/panel-2-right.png)
 
-> "OOOOOOHHHHH YESSSSSSSSS I LOVE"  
+> "You went above and beyond the high expectation I had. I couldn’t have asked for a better result - it’s seriously like you read my mind. It’s exactly what I wanted."  
 > _-Garner Dumas_
 
 There were a few things I knew I wanted to accomplish:
