@@ -7,7 +7,7 @@ $( ".flex-wrap p" ).has( "img" ).contents().unwrap();
 var rowWrap = '<div class="row align-center content"><div class="small-11 medium-10 large-9 columns content-col"></div></div>';
 var firstChild = $('#contentBody').children().first();
 
-firstChild.not(".flex-wrap").nextUntil('.flex-wrap').andSelf().wrapAll(rowWrap);
+firstChild.not(".flex-wrap").nextUntil('.flex-wrap').addBack().wrapAll(rowWrap);
 
 $(".flex-wrap").each(function(i) {
   $(this).nextUntil('.flex-wrap').wrapAll(rowWrap);

@@ -1,11 +1,11 @@
 {
-  "name": "saltagency",
-  "version": "0.0.1",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/devanflaherty/salt.git"
-  },
+  "name": "salt-agency",
+  "version": "1.0.0",
+  "description": "My site",
+  "main": "index.js",
+  "repository": "https://github.com/devanflaherty/jekyll-salt.git",
+  "author": "Devan Flaherty <devanflaherty@me.com>",
+  "license": "MIT",
   "scripts": {
     "watch": "gulp watch"
   },
@@ -27,6 +27,7 @@
     "bower": "~1.6.4",
     "colors": "^1.1.2",
     "del": "^2.2.0",
+    "foundation-sites": "^6.3.0-rc1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-babel": "^6.1.2",
@@ -38,15 +39,25 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.0",
+    "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
     "gulp-uncss": "^1.0.4",
     "gulp-util": "^3.0.7",
     "gulp-zip": "^3.0.2",
-    "merge-stream": "^1.0.0",
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.0.0",
+    "merge-stream": "^1.0.0",
+    "normalize": "^0.3.1",
     "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "fontawesome": "^4.7.0",
+    "gsap": "^1.19.0",
+    "instafeed.js": "^1.4.1",
+    "jquery": "^3.1.1",
+    "jribbble": "^2.0.4",
+    "motion-ui": "^1.2.2",
+    "scrollmagic": "^2.0.5"
   }
 }
