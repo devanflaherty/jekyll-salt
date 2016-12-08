@@ -10,7 +10,7 @@ CSS file.
 ******************************************************************/
 /**
  * Foundation for Sites by ZURB
- * Version 6.3-rc1
+ * Version 6.3.0-rc2
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -1346,24 +1346,6 @@ button {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   max-width: 100%; }
-
-.column.align-top, .align-top.columns {
-  -ms-flex-item-align: start;
-      align-self: flex-start; }
-
-.column.align-bottom, .align-bottom.columns {
-  -ms-flex-item-align: end;
-      align-self: flex-end; }
-
-.column.align-middle, .align-middle.columns {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center; }
-
-.column.align-stretch, .align-stretch.columns {
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch; }
 
 div,
 dl,

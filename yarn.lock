@@ -1478,13 +1478,12 @@ form-data@~1.0.0-rc3, form-data@~1.0.0-rc4:
     combined-stream "^1.0.5"
     mime-types "^2.1.11"
 
-foundation-sites@^6.3.0-rc1:
-  version "6.3.0-rc1"
-  resolved "https://registry.yarnpkg.com/foundation-sites/-/foundation-sites-6.3.0-rc1.tgz#284ab3fc5836cfd360516e80ae5a9fae433afea2"
+foundation-sites@^6.3.0-rc2:
+  version "6.3.0-rc2"
+  resolved "https://registry.yarnpkg.com/foundation-sites/-/foundation-sites-6.3.0-rc2.tgz#54032fab2ec5c07c38c3bd8e59068eab771a0639"
   dependencies:
     jquery "^2.2.0"
-    normalize-scss "^6.0.0"
-    what-input "^2.0.0"
+    what-input "^4.0.3"
 
 fs-exists-sync@^0.1.0:
   version "0.1.0"
@@ -3050,10 +3049,6 @@ normalize-range@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
 
-normalize-scss@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/normalize-scss/-/normalize-scss-6.0.0.tgz#5e94fc91e3bb279933ae8aaa511ad0912a0cb44d"
-
 normalize@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/normalize/-/normalize-0.3.1.tgz#5df4a3fe16c02e61fb31ff2fb448a07f4a4084a6"
@@ -4280,9 +4275,9 @@ vinyl@^2.0.0:
     remove-trailing-separator "^1.0.1"
     replace-ext "^1.0.0"
 
-what-input@^2.0.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/what-input/-/what-input-2.1.1.tgz#86b6e0338d670a9fd936892b8f5115c4fe0d1d0b"
+what-input@^4.0.3:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/what-input/-/what-input-4.0.4.tgz#14bf1a8c5eb31cdc7b6e0f3d7f23739fd92367c7"
 
 which-module@^1.0.0:
   version "1.0.0"
