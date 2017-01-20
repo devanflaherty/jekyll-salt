@@ -18,39 +18,39 @@ var COMPATIBILITY = [
 // File paths to various assets are defined here.
 var PATHS = {
   sass: [
-    './bower_components/foundation-sites/scss',
-    './bower_components/motion-ui/src',
-    './bower_components/fontawesome/scss',
+    './node_modules/foundation-sites/scss',
+    './node_modules/motion-ui/src',
+    './node_modules/fontawesome/scss',
   ],
   javascript: [
     // Foundation core - needed if you want to use any of the components below
-    './bower_components/what-input/what-input.js',
-    './bower_components/foundation-sites/js/foundation.core.js',
-    './bower_components/foundation-sites/js/foundation.util.*.js',
+    './node_modules/what-input/what-input.js',
+    './node_modules/foundation-sites/js/foundation.core.js',
+    './node_modules/foundation-sites/js/foundation.util.*.js',
 
     // Pick the components you need in your project
-    './bower_components/foundation-sites/js/foundation.abide.js',
-    './bower_components/foundation-sites/js/foundation.accordion.js',
-    './bower_components/foundation-sites/js/foundation.accordionMenu.js',
-    './bower_components/foundation-sites/js/foundation.drilldown.js',
-    './bower_components/foundation-sites/js/foundation.dropdown.js',
-    './bower_components/foundation-sites/js/foundation.dropdownMenu.js',
-    './bower_components/foundation-sites/js/foundation.equalizer.js',
-    './bower_components/foundation-sites/js/foundation.interchange.js',
-    './bower_components/foundation-sites/js/foundation.magellan.js',
-    './bower_components/foundation-sites/js/foundation.offcanvas.js',
-    './bower_components/foundation-sites/js/foundation.orbit.js',
-    './bower_components/foundation-sites/js/foundation.responsiveMenu.js',
-    './bower_components/foundation-sites/js/foundation.responsiveToggle.js',
-    './bower_components/foundation-sites/js/foundation.reveal.js',
-    './bower_components/foundation-sites/js/foundation.slider.js',
-    './bower_components/foundation-sites/js/foundation.sticky.js',
-    './bower_components/foundation-sites/js/foundation.tabs.js',
-    './bower_components/foundation-sites/js/foundation.toggler.js',
-    './bower_components/foundation-sites/js/foundation.tooltip.js',
+    './node_modules/foundation-sites/js/foundation.abide.js',
+    './node_modules/foundation-sites/js/foundation.accordion.js',
+    './node_modules/foundation-sites/js/foundation.accordionMenu.js',
+    './node_modules/foundation-sites/js/foundation.drilldown.js',
+    './node_modules/foundation-sites/js/foundation.dropdown.js',
+    './node_modules/foundation-sites/js/foundation.dropdownMenu.js',
+    './node_modules/foundation-sites/js/foundation.equalizer.js',
+    './node_modules/foundation-sites/js/foundation.interchange.js',
+    './node_modules/foundation-sites/js/foundation.magellan.js',
+    './node_modules/foundation-sites/js/foundation.offcanvas.js',
+    './node_modules/foundation-sites/js/foundation.orbit.js',
+    './node_modules/foundation-sites/js/foundation.responsiveMenu.js',
+    './node_modules/foundation-sites/js/foundation.responsiveToggle.js',
+    './node_modules/foundation-sites/js/foundation.reveal.js',
+    './node_modules/foundation-sites/js/foundation.slider.js',
+    './node_modules/foundation-sites/js/foundation.sticky.js',
+    './node_modules/foundation-sites/js/foundation.tabs.js',
+    './node_modules/foundation-sites/js/foundation.toggler.js',
+    './node_modules/foundation-sites/js/foundation.tooltip.js',
 
     // Motion UI
-    './bower_components/motion-ui/motion-ui.js',
+    './node_modules/motion-ui/motion-ui.js',
 
     // Include your own custom scripts (located in the custom folder)
     './build/js/scripts/*.js',
@@ -132,36 +132,36 @@ gulp.task('javascript', function() {
 // Copy task
 gulp.task('copy', function() {
   // Jquery
-  var jquery = gulp.src('bower_components/jquery/dist/**/*.*')
+  var jquery = gulp.src('node_modules/jquery/dist/**/*.*')
     .pipe($.flatten())
     .pipe(gulp.dest('assets/js/vendor/jquery'));
 
   // Motion UI
-  var motionUi = gulp.src('bower_components/motion-ui/**/*.*')
+  var motionUi = gulp.src('node_modules/motion-ui/**/*.*')
     .pipe($.flatten())
     .pipe(gulp.dest('assets/js/vendor/motion-ui'));
 
   // What Input
-  var whatInput = gulp.src('bower_components/what-input/**/*.*')
+  var whatInput = gulp.src('node_modules/what-input/**/*.*')
       .pipe($.flatten())
       .pipe(gulp.dest('assets/js/vendor/what-input'));
 
   // Font Awesome
-  var fontAwesome = gulp.src('bower_components/fontawesome/fonts/**/*.*')
+  var fontAwesome = gulp.src('node_modules/fontawesome/fonts/**/*.*')
       .pipe(gulp.dest('assets/fonts'));
 
   // ScrollMagic
-  var scrollmagic = gulp.src('bower_components/scrollmagic/**/*.*')
+  var scrollmagic = gulp.src('node_modules/scrollmagic/**/*.*')
     .pipe($.flatten())
     .pipe(gulp.dest('assets/js/vendor/scrollmagic'));
 
   // Instafeed
-  var instafeed = gulp.src('bower_components/instafeed.js/**/*.*')
+  var instafeed = gulp.src('node_modules/instafeed.js/**/*.*')
     .pipe($.flatten())
     .pipe(gulp.dest('assets/js/vendor/instafeed'));
 
   // Jribbble
-  var jribbble = gulp.src('bower_components/jribbble/dist/**/*.*')
+  var jribbble = gulp.src('node_modules/jribbble/dist/**/*.*')
       .pipe(gulp.dest('assets/js/vendor/jribbble'));
 
   return merge(jquery, motionUi, whatInput, fontAwesome, scrollmagic, instafeed, jribbble);
