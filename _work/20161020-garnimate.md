@@ -60,7 +60,7 @@ Motion Graphics is arguably one of the most fun creative fields out there. Their
 
 The brand for a motionographer is something that if done right, can be added to your arsenal. Motionographers a lot of time create a reel of their best work. A short video cutting from clip-to-clip of what they consider their best work. My favorite reels are the ones where the artist works in their own brand in-between clips, operating as a narrator to the reel. I wanted to make sure we could provide that for Garnimate, and not just give him the assets to do so, but giving him assets he could have fun with.
 
-![Alt text](http://media.saltagency.co/projects/garnimate/images/card-left.png) ![Alt text](http://media.saltagency.co/projects/garnimate/images/card-right.png)![Alt text](http://media.saltagency.co/projects/garnimate/images/panel-3-full.png)
+![Alt text](http://media.saltagency.co/projects/garnimate/images/card-left.png) ![Alt text](http://media.saltagency.co/projects/garnimate/images/card-right.png)
 
 #### It had to be organic
 
