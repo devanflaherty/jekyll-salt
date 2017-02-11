@@ -3374,7 +3374,8 @@ section {
   height: 64px;
   position: relative;
   z-index: 100;
-  background: #fefefe; }
+  background: #fefefe;
+  cursor: pointer; }
   @media screen and (min-width: 50em) {
     .nav-toggle, #connect .close {
       display: none; } }
@@ -3649,8 +3650,7 @@ section {
   min-height: 400px; }
 
 .Who #whois #ownerCard .owner-info {
-  padding-top: 32px;
-  padding-bottom: 32px; }
+  padding: 2rem; }
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .Who #whois #ownerCard .owner-info h3 {
       font-size: 3rem;

@@ -50,8 +50,7 @@
         min-height: 400px;
       }
       .owner-info {
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding: 2rem;
         h3 {
           @include breakpoint(medium only) {
             @include baseline(3rem, 3);
@@ -62,7 +61,6 @@
 
     #teamList {
       padding-top: 32px;
-
       .team-card {
         padding: 32px;
       }
