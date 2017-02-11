@@ -6,7 +6,7 @@
 .Process {
   #heart {
     .columns {
-      margin-bottom: 60px;
+      margin-bottom: 4rem;
       &:last-child {
         margin-bottom: 0;
       }
@@ -20,7 +20,7 @@
     .bio {
       @include breakpoint(small only) {
         max-width: 280px;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
       }
     }
     span {

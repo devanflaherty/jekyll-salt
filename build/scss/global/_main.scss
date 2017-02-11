@@ -12,11 +12,11 @@ body {
   background-color: $offWhite;
 }
 section:not(#contentBody) {
-  padding-left: 24px!important;
-  padding-right: 24px!important;
+  padding-left: 1.5rem!important;
+  padding-right: 1.5rem!important;
   @include breakpoint(medium) {
-    padding-left: 48px!important;
-    padding-right: 48px!important;
+    padding-left: 3rem!important;
+    padding-right: 3rem!important;
   }
 }
 section:not(.navigation, .no-pull) {
@@ -91,26 +91,26 @@ section:not(.navigation, .no-pull) {
 @include breakpoint(small) {
   .small {
     &-pad {
-      padding: 32px 0;
+      padding: 2rem 0;
     }
     &-pad-medium {
-      padding: 96px 0;
+      padding: 6rem 0;
     }
     &-pad-large {
-      padding: 192px 0;
+      padding: 12rem 0;
     }
   }
 }
 @include breakpoint(medium) {
   .medium {
     &-pad {
-      padding: 32px 0;
+      padding: 2rem 0;
     }
     &-pad-medium {
-      padding: 96px 0;
+      padding: 6rem 0;
     }
     &-pad-large {
-      padding: 192px 0;
+      padding: 12rem 0;
     }
   }
 }
@@ -209,21 +209,21 @@ section {
   p {
     color: $light-gray!important;
     @include breakpoint(medium) {
-      padding: inherit 20px;
+      padding: inherit 1.25rem;
     }
   }
 }
 .social-list {
   position: relative;
-  padding: 30px 0;
+  padding: 2rem 0;
   @include breakpoint(small only) {
-    margin-top: 60px;
+    margin-top: 4rem;
   }
   div {
     padding: 0!important;
     margin: 0!important;
     a.link {
-      font-size: 26px;
+      font-size: 1.5rem;
       display: inline-block;
       text-align: left;
     }

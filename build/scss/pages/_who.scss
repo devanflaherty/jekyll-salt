@@ -6,7 +6,7 @@
 .Who {
   #heart {
     .columns {
-      margin-bottom: 60px;
+      margin-bottom: 4rem;
       &:last-child {
         margin-bottom: 0;
       }
@@ -25,7 +25,7 @@
       left: 0; top: 0;
       max-width: 100%;
 
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
       @include breakpoint(medium) {
         margin-bottom: 0;
       }
@@ -38,7 +38,7 @@
     }
     hr {
       border-color: $secondaryColor;
-      margin: 60px 0;
+      margin: 4rem 0;
     }
 
     #ownerCard {
@@ -60,12 +60,12 @@
     }
 
     #teamList {
-      padding-top: 32px;
+      padding-top: 2rem;
       .team-card {
-        padding: 32px;
+        padding: 2rem;
       }
       .column {
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
         &:last-of-type {
           margin-bottom: 0;
         }
@@ -79,7 +79,7 @@
         &:nth-child(3n) {
           padding-right: 0!important;
         }
-        @include breakpoint(small only) {
+        @include breakpoint(medium down) {
           &:nth-child(4n+1), &:nth-child(3n+2), &:nth-child(3n)  {  /* or 4n+1 */
             padding-left: 0!important;
             padding-right: 0!important;

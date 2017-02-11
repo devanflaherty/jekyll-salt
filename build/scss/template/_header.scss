@@ -32,19 +32,19 @@
   section.navigation {
     height: 140px;
     width: 100%;
-    padding: 0 32px;
+    padding: 0 2rem;
     flex: 0 1 auto;
     h1#logoTag {
       position: absolute;
       z-index: 200;
-      left: 48px;
+      left: 3rem;
       top: 0;
-      width: 80px;
+      width: 5rem;
       height: 140px;
       transition: all 0.5s ease;
 
       @include breakpoint(small only) {
-        left: 24px;
+        left: 1.5rem;
       }
       &.peek {
         position: fixed;
@@ -60,7 +60,7 @@
         position: relative;
         display: block;
         background: $white;
-        width: 80px;
+        width: 5rem;
         height: 140px;
         text-align: center;
         transition: all 0.5s ease;
@@ -70,7 +70,7 @@
         }
         img {
           width: 60%;
-          margin: 16px 0 16px;
+          margin: 1rem 0 1rem;
         }
         span {
           display: block;
@@ -90,7 +90,7 @@
       transition: transform 0.5s ease;
       @include breakpoint(small only) {
         height: 50px;
-        right: 24px;
+        right: 1.5rem;
       }
       &.peek {
         position: fixed;
@@ -130,7 +130,7 @@
           overflow: hidden;
           a {
             display: inline-block;
-            padding: 24px;
+            padding: 1.5rem;
             font-size: 13px;
             letter-spacing: 4px;
             color: $black;
@@ -148,7 +148,7 @@
               position: absolute;
               left: -3px; right: 0;
               margin: 0 auto;
-              top: 48px;
+              top: 3rem;
             }
           }
         }
@@ -157,7 +157,7 @@
   }
   section.content {
     flex: 0 1 auto;
-    margin-top: 24px;
+    margin-top: 1.5rem;
     @include flex-align(left, top);
     @include breakpoint(medium) {
       flex: 1 0 auto;
@@ -174,10 +174,10 @@
         border-top: 2px solid $black;
       }
       .links {
-        margin-right: 24px;
+        margin-right: 1.5rem;
         a {
           display: inline-block;
-          margin-top: 8px;
+          margin-top: .5rem;
         }
       }
     }
@@ -264,9 +264,9 @@
 *************************/
 .nav-toggle {
   color: $black;
-  padding: 32px 16px;
-  width: 64px;
-  height: 64px;
+  padding: 2rem 1rem;
+  width: 4rem;
+  height: 4rem;
   position: relative;
   z-index: 100;
   background: $white;
@@ -279,7 +279,7 @@
     cursor: pointer;
     border-radius: 6px;
     height: 4px;
-    width: 32px;
+    width: 2rem;
     position: absolute;
     display: block;
     content: '';
@@ -289,7 +289,7 @@
     cursor: pointer;
     border-radius: 6px;
     height: 3px;
-    width: 32px;
+    width: 2rem;
     background: $black;
     position: absolute;
     display: block;

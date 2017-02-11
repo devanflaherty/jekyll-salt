@@ -10,13 +10,13 @@
   #discovery-columns {
     .columns {
       @include breakpoint(medium down) {
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
       }
     }
   }
   .discover-link {
     @include breakpoint(medium) {
-      padding-top: 20px;
+      padding-top: 1.25rem;
     }
     .columns {
       margin-bottom: 0!important;

@@ -12,7 +12,7 @@
 }
 #face-icon {
   width: 40%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   transform: translate(-15px, 0);
   @include breakpoint(medium) {
     width: 25%;
@@ -20,7 +20,7 @@
 }
 #skull-icon {
   width: 66%;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   @include breakpoint(medium) {
     width: 33%;
   }

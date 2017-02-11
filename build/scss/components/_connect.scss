@@ -13,8 +13,8 @@
     display: none;
     position: absolute;
     z-index: 101;
-    top: 48px;
-    right: 48px;
+    top: 2.5rem;
+    right: 3rem;
   }
   .row {
     height: 100%;
@@ -39,15 +39,15 @@
     transform: translateX(100%);
     display: none;
     .column {
-      padding-left: 45px;
+      padding-left: 3rem;
     }
     @include flex-grid-column(12);
     @include breakpoint(medium) {
       @include flex-grid-column(4);
     }
     h2.logo {
-      font-size: 66px;
-      margin-bottom: 16px;
+      font-size: 4rem;
+      margin-bottom: 1rem;
     }
     &.visible {
       transform: translateX(0);

@@ -1,5 +1,5 @@
 /* CONTENT BODY */
-$cbmargin : 96px;
+$cbmargin : 6rem;
 #contentBody {
   max-width: 100%;
   overflow: hidden;
@@ -50,7 +50,7 @@ $cbmargin : 96px;
         width: 100%; height: auto;
       }
       h6 {
-        margin-left: 32px;
+        margin-left: 2rem;
         color: $medium-gray;
         font-family: $sans400;
         border-color: $medium-gray;
@@ -82,7 +82,7 @@ $cbmargin : 96px;
     margin: 0 0 $cbmargin/2 0;
     border: lighten($secondaryColor, 5%) 1px solid;
     width: 100%;
-    padding: 24px;
+    padding: 1.5rem;
     font-family: Inconsolata, monospace, sans-serif;
     @include baseline(0.77rem);
     white-space: pre;
