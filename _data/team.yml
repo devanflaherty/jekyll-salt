@@ -1,0 +1,25 @@
+---
+- name: Graphic Designer
+  title: Contract/Remote
+  image:
+  desc: You are efficient working in adobe creative suites and sketch. You make stunning designs in a variety of styles with a focus on the messaging.
+  apply:
+  - value: Apply
+    url: "mailto:work@saltagency.co?subject=Graphic Designer"
+  social:
+  - class:
+    url:
+- name: Web Developer
+  title: Contract/Remote
+  image:
+  desc: From front-end development to custom wordpress sites, you are all things dev. You are a builder of systems, from logic to user experience.
+  apply:
+  - value: Apply
+    url: "mailto:work@saltagency.co?subject=Web Developer"
+- name: Digital Marketer
+  title: Contract/Remote
+  image:
+  desc: You help define and speak our clients language, and make sure they are heard across the web. Social media isn't a toy to you, it's a medium for story.
+  apply:
+  - value: Apply
+    url: "mailto:work@saltagency.co?subject=Digital Marketer"

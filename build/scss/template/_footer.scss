@@ -5,27 +5,24 @@
 *************************/
 #footer {
   position: absolute;
-  margin-top: -58px;
-  padding: 20px 0 15px;
+  padding: 32px 0 16px;
   position: relative;
-  background: rgba($white, 0.1);
   .branding {
     text-align: center;
     p {
+      @include baseline(.75rem);
       float: left;
-      line-height: 1.33;
       text-transform: uppercase;
       font-family: $sans600;
-      font-size: 11px;
       color: rgba($black, 0.75);
       letter-spacing: 1px;
-      margin: 0;
-      padding: 0 12px;
+      padding-left: 16px;
+      padding-right: 16px; 
     }
     h3 {
       float: left;
       font-family: $serif;
-      font-size: 20px;
+      font-size: 1.5rem;
       line-height: .75;
       letter-spacing: 4px!important;
       text-transform: uppercase;

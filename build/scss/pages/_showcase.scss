@@ -43,46 +43,39 @@
 ** SHOWCASE SINGLE
 
 *************************/
-#team {
-  h3 {
-    color: $white;
-    @include breakpoint(medium) {
-      font-size: 65px;
-      line-height: 55px;
+#credits {
+  margin: 64px 0;
+  #team {
+    h3 {
+      color: $white;
+    }
+    h4 {
+      color: $white;
+      font-family: $sans400;
+      padding-top: 0!important;
+    }
+    h5 {
+      text-transform: uppercase;
+      @include baseline(.9rem);
+      letter-spacing: 2px;
+      margin-bottom: 0!important;
+      color: rgba($white, 0.5);
+      font-family: $sans600;
     }
   }
-  h4 {
-    font-size: 20px;
-    margin-bottom: 18px;
-    color: $white;
-    font-family: $sans400;
-  }
-  h5 {
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 2px;
-    margin-bottom: 0;
-    color: rgba($white, 0.5);
-    font-family: $sans600;
-  }
-}
-#scope {
-  h3, h4, h5, p, span {
-    color: $black;
-  }
-  h3 {
-    @include breakpoint(medium) {
-      font-size: 65px;
-      line-height: 55px;
+  #scope {
+    background: $white;
+    h3, h4, h5, p, span {
+      color: $black;
     }
-  }
-  span {
-    display: block;
-    font-size: 14px;
-    font-family: $sans600;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-    color: darken($secondaryColor, 10%);
+    span {
+      display: block;
+      @include baseline(.9rem);
+      font-family: $sans600;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      color: darken($secondaryColor, 10%);
+    }
   }
 }
 

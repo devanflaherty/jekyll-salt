@@ -35,7 +35,7 @@
     </section>
 
     {% if page.layout == 'showcase-single' %}
-      <section class="content row align-center">
+      <section class="content row align-center no-pull colapse">
         <div id="subtitle" class="small-12 medium-10 columns">
           <h2 class="text-center">{{ page.title }}</h2>
         </div>
@@ -44,7 +44,7 @@
         </div>
       </section>
     {% else %}
-      <section class="content row">
+      <section class="content row no-pull collapse">
         <div id="headline" class="small-10 medium-5 large-4 columns">
           <p>Crafting compelling stories executed through beautiful design, destined to make an impact.</p>
           {% if page.links %}

@@ -1,13 +1,13 @@
 ---
-- title: Creative Direction
+- title: Brand Identity
   image: key.png
-  desc: Strategy, Story, Branding & Product Development
-- title: Design
+  desc: Strategy<br> Story Design<br> Visual Identity
+- title: Graphic Design
   image: pencil.png
-  desc: Visual Identity, Collateral, Packaging, Environment
+  desc: Product Design<br> Collateral<br> Packaging
 - title: Web Development
   image: hand.png
-  desc: UI/UX, Front-/Back-End Development, E-Commerce
+  desc: UI/UX<br> Front-End Development<br> Back-End Development
 - title: Consulting
   image: helm.png
-  desc: The Salt Session, Messaging
+  desc: The Salt Session<br> SEO<br> Content Strategy

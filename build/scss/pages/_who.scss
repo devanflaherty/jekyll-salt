@@ -1,0 +1,137 @@
+/************************
+
+** WHO PAGE
+
+*************************/
+.Who {
+  #heart {
+    .columns {
+      margin-bottom: 60px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  #whois {
+    img {
+      display: block;
+      margin: 0;
+    }
+    .bio {
+      background-position: center center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0; top: 0;
+      max-width: 100%;
+
+      margin-bottom: 20px;
+      @include breakpoint(medium) {
+        margin-bottom: 0;
+      }
+      @include breakpoint(large) {
+        background-position: right center;
+      }
+    }
+    span {
+      color: scale-color($secondaryColor, $lightness: -20%);
+    }
+    hr {
+      border-color: $secondaryColor;
+      margin: 60px 0;
+    }
+
+    #ownerCard {
+      @include breakpoint(small only) {
+        background-color: $white;
+      }
+      .owner-pic {
+        left: 0px;
+        min-height: 400px;
+      }
+      .owner-info {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        h3 {
+          @include breakpoint(medium only) {
+            @include baseline(3rem, 3);
+          }
+        }
+      }
+    }
+
+    #teamList {
+      padding-top: 32px;
+
+      .team-card {
+        padding: 32px;
+      }
+      .column {
+        margin-bottom: 32px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        &:nth-child(4n+1) {  /* or 4n+1 */
+          padding-left: 0!important;
+        }
+        &:nth-child(3n+2) {
+          padding-right: 8px;
+          padding-left: 8px;
+        }
+        &:nth-child(3n) {
+          padding-right: 0!important;
+        }
+        @include breakpoint(small only) {
+          &:nth-child(4n+1), &:nth-child(3n+2), &:nth-child(3n)  {  /* or 4n+1 */
+            padding-left: 0!important;
+            padding-right: 0!important;
+          }
+        }
+      }
+    }
+  }
+}
+
+#process {
+  h3, h4 {
+    margin-bottom: 0;
+  }
+  .process-item {
+    img {
+      display: block;
+      max-width: 75%;
+      margin: 0 auto;
+    }
+    @include breakpoint(small only) {
+      margin-bottom: 1rem;
+      img {
+        max-width: 75%;
+      }
+    }
+  }
+}
+
+#instafeed {
+  @include breakpoint(small only) {
+    .columns:nth-of-type(n+4) {
+      display: none;
+    }
+  }
+  a {
+    background: $black;
+    overflow: hidden;
+    display: block;
+    img {
+      transform: scale(1.5);
+      display: block;
+      opacity: 0.75;
+      transition: all 0.25s ease;
+    }
+    &:hover {
+      img {
+        opacity: 1;
+        transform: scale(1.75);
+      }
+    }
+  }
+}

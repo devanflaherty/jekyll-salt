@@ -120,3 +120,23 @@ $('.parallax').each(function(){
   // .addIndicators({name: "parallax"})
   .addTo(controller);
 });
+
+$('section:not(.navigation, .no-pull)').each(function(){
+  var currentStatement = this;
+  var trigger = currentStatement.closest('section');
+
+  var tween_statement = TweenMax
+  .fromTo(currentStatement, 1, {
+    transform: 'translate(0px, 100px)'
+  }, {
+    transform: 'translate(0px, 0px)'
+  });
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: trigger,
+    triggerHook: "onEnter"
+  })
+  .setTween(tween_statement)
+  // .addIndicators({name: "Pop"})
+  .addTo(controller);
+});

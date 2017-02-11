@@ -3,8 +3,11 @@
   <head>
     {% include template/head.html %}
     <style>
-      #main-nav li a:hover {
-        border-color: {{ page.primaryColor }}!important;
+      #main-nav .selector {
+        background-color: {{ page.primaryColor }}!important;
+      }
+      #main-nav li a.active span {
+        background-color: {{ page.primaryColor }}!important;
       }
       .overlay {
         background-color: {{ page.primaryColor }}!important;
@@ -23,7 +26,7 @@
       <!-- PROJECT DETAILS -->
       <section id="project" class="small-pad-medium off-white-bg">
         <div class="row align-center align-middle medium-text-center">
-          <div class="small-11 medium-6 columns">
+          <div class="small-11 medium-8 columns">
             <h5>
               {{ page.excerpt }}
             </h5>
@@ -75,11 +78,11 @@
       </section>
 
       <!-- PROJECT FOOTER -->
-      <section class="small-pad-medium secondary-bg">
-        <div class="row align-center text-center">
+      <section>
+        <div class="row align-center text-center small-pad">
           <div class="small-9 columns">
             <h3>Back to the goods</h3><br>
-            <a class="link" href="/showcase">Showcase</a>
+            <a class="button" href="/showcase">Showcase</a>
           </div>
         </div>
       </section>

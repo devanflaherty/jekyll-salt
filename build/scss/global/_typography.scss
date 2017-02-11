@@ -1,0 +1,73 @@
+.serif {
+  font-family: $serif;
+}
+.sans {
+  font-family: $sans400;
+}
+
+h1, h2, h3, h4, h5 {
+  &.sans {
+    font-family: $sans600;
+    font-weight: 200;
+    strong {
+      font-family: $sans800;
+      font-weight: 200;
+    }
+  }
+}
+
+h2 {
+  @include baseline(5rem, 6);
+  @include breakpoint(large) {
+    @include baseline(6rem, 6);
+  }
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  strong {
+    font-family: $serif;
+    color: $black;
+  }
+  span {
+    color: $primary-color;
+  }
+  &.brand-vision {
+    @include baseline(4rem, 4);
+    @include breakpoint(large) {
+      @include baseline(5rem, 5);
+    }
+  }
+}
+
+h3 {
+  @include baseline(3rem, 3);
+  @include breakpoint(medium) {
+    @include baseline(4rem, 4);
+  }
+  @include breakpoint(large) {
+    @include baseline(3rem, 3);
+  }
+  color: $black;
+}
+
+h4 {
+  @include baseline(1.5rem);
+}
+
+h5 {
+  @include baseline(1.25rem);
+}
+
+h6 {
+  @include baseline(1rem);
+  font-family: $serif;
+  display: inline-block;
+  border-top: 2px solid $black;
+}
+
+p {
+  @include baseline(1rem);
+  strong {
+    font-family: $sans800;
+    font-weight: 200;
+  }
+}

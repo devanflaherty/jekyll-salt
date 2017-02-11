@@ -1,0 +1,82 @@
+---
+title: Who
+permalink: "/who/"
+layout: default
+statement: The Set-Up
+links:
+- url: "#serviceList"
+  value: What We Do
+talk:
+- title: We<br> Should<br> Talk
+  subTitle: You had me at "hello"
+  content: Believe it or not, we love what we do, and we'd love to partner with you.
+    Wether you can't figure out where to start or if you're ready to take your business
+    to the next level, we're here to see it through. Just say "hello" and we'll set
+    the sails.
+  class: secondary-bg
+---
+
+<!-- Heart -->
+<section id="heart">
+  <div class="row align-center white-bg" style="padding-top:96px;">
+    <div class="small-11 medium-10 columns">
+      <h6>Our Heart</h6>
+    </div>
+  </div>
+  <div class="row align-center white-bg small-pad-medium">
+    <div class="small-11 medium-10 large-5 columns">
+      <h3>{{ site.data.pillars[0].title }}</h3>
+      <p>
+        {{ site.data.pillars[0].content }}
+      </p>
+    </div>
+    <div class="small-11 medium-10 large-5 columns">
+      <h3>{{ site.data.pillars[1].title }}</h3>
+      <p>
+        {{ site.data.pillars[1].content }}
+      </p>
+    </div>
+
+    <div class="small-11 medium-10 large-10 columns">
+      <div class="row align-center align-middle">
+        <div class="columns small-12 medium-12 large-6" style="margin: 0;">
+          <h3>{{ site.data.pillars[2].title }}</h3>
+        </div>
+        <div class="columns small-12 medium-12 large-6">
+          <p>
+            {{ site.data.pillars[2].content }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+{% include content/process.html %}
+
+<!-- Services -->
+<section id="services">
+  <div class="row align-center small-pad-medium contrast-bg">
+    <div class="column small-12 medium-10 large-12">
+      <h3 class="text-center" style="padding-bottom: 64px">What We Do Well</h3>
+      <ul id="serviceList" class="row small-up-2 large-up-4 align-center">
+        {% include content/service-list.html %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+{% include content/team.html %}
+
+<!-- Type -->
+
+<!-- Location  -->
+{% include content/location.html %}
+
+<!-- INSTAFEED -->
+{% include content/instafeed.html %}
+
+<!-- TALK -->
+{% include components/talk.html %}

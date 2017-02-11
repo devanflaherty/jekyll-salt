@@ -4,6 +4,9 @@
 
 *************************/
 #discover {
+  > .row {
+    background: $white;
+  }
   #discovery-columns {
     .columns {
       @include breakpoint(medium down) {

@@ -1,5 +1,5 @@
 .flex {
-  @include flex-grid-row() { }
+  @include flex;
   > div, > li {
     @include flex-grid-column()
   }

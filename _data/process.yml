@@ -1,0 +1,10 @@
+---
+- title: Discover
+  content: We dream. We ideate. We strategize. Messaging & creative direction are formed.
+  image: "/images/process-icons/dream.png"
+- title: Design
+  content: The vision finds form. Principle art, UX, prototypes, story boards are created.
+  image: "/images/process-icons/design.png"
+- title: Develop
+  content: Design matures and is built upon. The peices converge, the vision becomes reality.
+  image: "/images/process-icons/develop.png"

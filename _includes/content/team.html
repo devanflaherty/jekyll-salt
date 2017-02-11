@@ -1,0 +1,56 @@
+<!-- Who Is -->
+<section id="whois" class="small-pad-medium">
+  <div class="row align-middle align-center" style="padding-bottom: 30px">
+    <div class="small-11 medium-10 columns">
+      <h6 class="text-center">Who is Salt?</h6>
+    </div>
+  </div>
+
+  <div id="ownerCard" class="row align-middle align-stretch align-center">
+    <div class="owner-pic small-12 medium-6 columns white-bg para-parent small-order-2 medium-order-1">
+      <div class="cover-bg bio" style="background-image: url({{ site.assetUrl }}/images/fam.jpg);"></div>
+    </div>
+    <div class="owner-info small-11 medium-6 columns white-bg small-order-1 medium-order-2">
+      <h3>Devan Flaherty</h3>
+      <h6>Owner / Creative Director</h6>
+      <p style="margin-top: 15px; margin-bottom: 0;">
+        As a Creative Director, designer and developer with 10 years of experience, Devan Flaherty works
+        in a multitude of creative disciplines-from Product Design to Front - End Development to Stratey-to help
+        create &amp; develop strong brands, web experiences and campaigns that create an impact.</p>
+        <p>He is a firm believer in collaboration, simplicity, and taking big risks.
+          Also, he dreams of designing his own fashion label.</p>
+    </div>
+  </div>
+
+  <div id="teamList" class="row small-up-1 large-up-3">
+    {% assign team = site.data.team %}
+
+    {% for member in team %}
+        <div class="column">
+          <div class="white-bg">
+            <img src="{{ member.image }}">
+            <div class="team-card">
+            {% if member.name %}
+              <h4>{{ member.name }}</h4>
+              <span>{{ member.title }}</span>
+            {% else %}
+              <h4>{{ member.title }}</h4>
+            {% endif %}
+              <p>{{ member.desc }}</p>
+              <a href="{{ member.apply[0].url }}" class="button">{{ member.apply[0].value}}</a>
+            {% if member.social[0].class %}
+              <nav>
+                {% for link in member.social %}
+                <a href="{{ link.url }}">
+                  <i class="fa {{ link.class }}" aria-hidden="true"></i>
+                </a>
+                {% endfor %}
+              </nav>
+            {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+  </div><!--close row-->
+</section>

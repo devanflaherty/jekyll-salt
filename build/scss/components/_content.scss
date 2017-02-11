@@ -1,5 +1,5 @@
 /* CONTENT BODY */
-$cbmargin : 80px;
+$cbmargin : 96px;
 #contentBody {
   max-width: 100%;
   overflow: hidden;
@@ -23,35 +23,11 @@ $cbmargin : 80px;
       color: $black;
     }
   }
-  h2 {
-    text-transform: none;
-    margin-bottom: 18px;
-  }
-  h3 {
-    margin: $cbmargin/2 0;
-  }
-  h5 {
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 2px;
-    margin: $cbmargin/2 0;
-    font-size: 30px;
-    font-family: $sans400;
-    @include breakpoint(medium) {
-      letter-spacing: 5px;
-    }
-  }
   h6 {
-    margin: $cbmargin/2 0;
+    margin-top: $cbmargin/2!important;
   }
   p {
     width: 100%;
-    margin-bottom: $cbmargin/2;
-    line-height: 1.85;
-    strong {
-      font-family: $sans800;
-      font-weight: 200;
-    }
   }
   .flex-video {
     margin: $cbmargin 0;
@@ -75,8 +51,6 @@ $cbmargin : 80px;
       }
       h6 {
         margin-left: 32px;
-        margin-bottom: 12px;
-        margin-top: 0px;
         color: $medium-gray;
         font-family: $sans400;
         border-color: $medium-gray;
@@ -91,14 +65,12 @@ $cbmargin : 80px;
     border-left: 4px solid $secondaryColor;
     margin: $cbmargin 0;
     padding-top: 4px;
-    font-size: 24px;
     @include breakpoint(medium) {
       transform: translate(-40px, 0);
     }
     p {
-      line-height: 1.5;
-      padding: 0;
-      margin: 0;
+      @include baseline(1.5rem);
+      margin-bottom: 0.25rem;
     }
     strong {
       font-family: $serif;
@@ -112,7 +84,7 @@ $cbmargin : 80px;
     width: 100%;
     padding: 24px;
     font-family: Inconsolata, monospace, sans-serif;
-    font-size: 0.9em;
+    @include baseline(0.77rem);
     white-space: pre;
     overflow: auto;
     background: lighten($secondaryColor, 10%);

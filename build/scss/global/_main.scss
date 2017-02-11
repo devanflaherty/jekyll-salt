@@ -9,9 +9,19 @@ html, body {
   }
 }
 body {
-  background-color: $white;
+  background-color: $offWhite;
 }
-
+section:not(#contentBody) {
+  padding-left: 24px!important;
+  padding-right: 24px!important;
+  @include breakpoint(medium) {
+    padding-left: 48px!important;
+    padding-right: 48px!important;
+  }
+}
+section:not(.navigation, .no-pull) {
+  transform: translate(0px, 100px);
+}
 
 /************************
 
@@ -81,26 +91,26 @@ body {
 @include breakpoint(small) {
   .small {
     &-pad {
-      padding: 30px 0;
+      padding: 32px 0;
     }
     &-pad-medium {
-      padding: 100px 0;
+      padding: 96px 0;
     }
     &-pad-large {
-      padding: 200px 0;
+      padding: 192px 0;
     }
   }
 }
 @include breakpoint(medium) {
   .medium {
     &-pad {
-      padding: 30px 0;
+      padding: 32px 0;
     }
     &-pad-medium {
-      padding: 100px 0;
+      padding: 96px 0;
     }
     &-pad-large {
-      padding: 200px 0;
+      padding: 192px 0;
     }
   }
 }
@@ -163,75 +173,14 @@ body {
 ::selection {
   background: $tertiaryColor;
 }
-h1, h2, h3, h4, h5 {
-  &.sans {
-    font-family: $sans600;
-    font-weight: 200;
-    strong {
-      font-family: $sans800;
-      font-weight: 200;
-    }
-  }
-}
-h2 {
-  letter-spacing: 1.5px;
-  text-transform: capitalize;
-  font-size: 90px;
-  line-height: 80px;
-  @include breakpoint(large) {
-    font-size: 100px;
-    line-height: 90px;
-  }
-  strong {
-    font-family: $serif;
-    color: $black;
-  }
-  span {
-    color: $primary-color;
-  }
-  &.brand-vision {
-    font-size: 70px;
-    line-height: 60px;
-    @include breakpoint(large) {
-      font-size: 90px;
-      line-height: 80px;
-    }
-  }
-}
-h3 {
-  color: $black;
-  font-size: 50px;
-  line-height: 45px;
-  @include breakpoint(medium) {
-    font-size: 80px;
-    line-height: 70px;
-  }
-  @include breakpoint(large) {
-    font-size: 100px;
-    line-height: 90px;
-  }
-}
-h6 {
-  font-size: 18px;
-  font-family: $serif;
-  padding-top: 3px;
-  display: inline-block;
-  border-top: 2px solid $black;
-}
-.serif {
-  font-family: $serif;
-}
-.sans {
-  font-family: $sans400;
-}
 .hint {
   color: $black;
   font-family: $serif;
-  font-size: 14px;
+  @include baseline(0.95rem);
   width: 90%;
   margin: 0 auto;
   @include breakpoint(medium) {
-    font-size: 18px;
+    @include baseline(1.1rem);
   }
 }
 
@@ -248,9 +197,6 @@ section {
   position: relative;
   text-align: center;
   overflow: hidden;
-  .hint {
-    margin-bottom: 24px;
-  }
 }
 
 /************************
@@ -263,7 +209,7 @@ section {
   p {
     color: $light-gray!important;
     @include breakpoint(medium) {
-      padding: 0 20px;
+      padding: inherit 20px;
     }
   }
 }
@@ -278,6 +224,8 @@ section {
     margin: 0!important;
     a.link {
       font-size: 26px;
+      display: inline-block;
+      text-align: left;
     }
     a, i {
       transition: all 0.25s ease;
