@@ -3695,7 +3695,7 @@ section {
   #process .process-item {
     margin-bottom: 1rem; }
     #process .process-item img {
-      max-width: 75%; } }
+      max-width: 50%; } }
 
 @media screen and (max-width: 39.9375em) {
   #instafeed .columns:nth-of-type(n+4) {
