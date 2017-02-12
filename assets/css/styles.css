@@ -2862,6 +2862,9 @@ html, body {
     height: 100%;
     max-height: 100%;
     width: 100%; }
+  @media screen and (max-width: 39.9375em) {
+    html.iphone.navFixed, body.iphone.navFixed {
+      position: fixed; } }
 
 body {
   background-color: #f4f4f4; }
@@ -3078,8 +3081,8 @@ section {
 #header {
   overflow: hidden;
   position: relative;
-  min-height: 520px;
-  padding-top: 24px;
+  min-height: 420px;
+  padding-top: 1.5rem;
   -ms-flex-flow: column;
       flex-flow: column;
   background: #f4f4f4; }
@@ -3478,8 +3481,8 @@ section {
     #footer .branding h3 {
       float: left;
       font-family: "youngserifregular", Georgia, serif;
-      font-size: 1.5rem;
-      line-height: .75;
+      font-size: 1.25rem;
+      line-height: 1.33;
       letter-spacing: 4px !important;
       text-transform: uppercase;
       margin-left: 4px;

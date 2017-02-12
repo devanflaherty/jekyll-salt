@@ -13,8 +13,8 @@
 #header {
   overflow: hidden;
   position: relative;
-  min-height: 520px;
-  padding-top: 24px;
+  min-height: 420px;
+  padding-top: 1.5rem;
   flex-flow: column;
   background: $offWhite;
   @include breakpoint(medium) {
