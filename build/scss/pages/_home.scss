@@ -3,6 +3,10 @@
 ** HOME
 
 *************************/
+.home-header {
+  height: auto!important;
+  min-height: auto!important;
+}
 #discover {
   > .row {
     background: $white;
