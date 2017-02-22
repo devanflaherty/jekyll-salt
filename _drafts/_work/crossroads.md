@@ -2,33 +2,24 @@
 layout: showcase-single
 title: Crossroads
 date: 2017-02-22 15:49
-slug: fresh-life-church
-subtitle: Real, relevant, raw
-project-type: Creative Director
-excerpt: 'Fresh Life Church is led by Levi and Jennie Lusko with multiple campuses
-  all across the state of Montana. Their vision is simple: to see those stranded in
-  sin find life and liberty in Jesus Christ.'
+slug: crossroads
+subtitle: Simply Responding to Jesus
+project-type: Web Design & Development
+excerpt: Over the winter we had the privilege to redesign and develop a custom Wordpress
+  site for Crossroads church. We re-evaluated what we had done for them the year previously
+  with focus on accommodating a theme for their children campuses on a WPMultiSite.
+  We also got to tackle Pastor Daniel Fusco's personal site.
 team:
 - name: Devan Flaherty
   position: Creative Lead
-- name: Levi Lusko
-  position: Senior Pastor
-- name: Devan Flaherty
-  position: Creative Director
-- name: John Mark Creamer
-  position: Project Manager
-- name: Elisha Guido
-  position: Lead Designer
-- name: Tyler Bodway
-  position: Web Developer"
 scope:
-- label: Creative Direction
 - label: Art Direction
 - label: Graphic Design
 - label: Web Design
 - label: Web Development
-primaryColor: "#e51717"
+primaryColor: "#00a0dc"
 secondaryColor: "#e5e5e5"
 backgroundColor: "#242424"
-contrast: true
+contrast: false
 ---
+# 
