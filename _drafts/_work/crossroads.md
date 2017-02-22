@@ -5,10 +5,10 @@ date: 2017-02-22 15:49
 slug: crossroads
 subtitle: Simply Responding to Jesus
 project-type: Web Design & Development
-excerpt: Over the winter we had the privilege to redesign and develop a custom Wordpress
-  site for Crossroads church. We re-evaluated what we had done for them the year previously
-  with focus on accommodating a theme for their children campuses on a WPMultiSite.
-  We also got to tackle Pastor Daniel Fusco's personal site.
+excerpt: 'Over the winter we had the privilege to redesign and develop a custom Wordpress
+  site for Crossroads church & Pastor Daniel Fusco. We re-evaluated what we had done
+  for them the year previously with the new challenge of accommodating a theme for
+  their children campuses on a WP MultiSite. '
 team:
 - name: Devan Flaherty
   position: Creative Lead
