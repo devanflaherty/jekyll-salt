@@ -64,15 +64,18 @@
         height: 140px;
         text-align: center;
         transition: all 0.5s ease;
+        padding-top: .33rem;
         &:hover {
           padding-top: 24px;
           height: 160px;
         }
         img {
-          width: 60%;
-          margin: 1rem 0 1rem;
+          display: block;
+          margin: 0 auto 0;
+          padding: .33rem 0;
         }
         span {
+          padding-top: .33rem;
           display: block;
           font-size: 14px;
           letter-spacing: 3px;
@@ -141,7 +144,7 @@
             position: relative;
             transition: all 1s ease;
             &.active span {
-              background: red;
+              background: $tertiaryColor;
               content: '';
               display: block;
               height: 2px;

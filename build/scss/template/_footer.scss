@@ -5,10 +5,17 @@
 *************************/
 #footer {
   position: absolute;
-  padding: 2rem 0 1rem;
+  padding: 3rem 0 3rem; //2rem 0 1rem;
   position: relative;
   .branding {
     text-align: center;
+    span {
+      display: block;
+      font-size: 8px;
+      letter-spacing: 2px;
+      margin-top: 16px;
+      font-family: $sans600;
+    }
     p {
       @include baseline(.75rem);
       float: left;
