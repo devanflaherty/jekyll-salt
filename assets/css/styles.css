@@ -3108,8 +3108,8 @@ section {
       top: 0;
       width: 5rem;
       height: 140px;
-      -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
       @media screen and (max-width: 39.9375em) {
         #header section.navigation h1#logoTag {
           left: 1.5rem; } }
@@ -3132,12 +3132,16 @@ section {
         width: 5rem;
         height: 140px;
         text-align: center;
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        padding-top: .33rem; }
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        padding-top: .33rem;
+        -webkit-box-shadow: 2px 2px 0px rgba(34, 34, 32, 0.05);
+                box-shadow: 2px 2px 0px rgba(34, 34, 32, 0.05); }
         #header section.navigation h1#logoTag a:hover {
           padding-top: 24px;
-          height: 160px; }
+          height: 160px;
+          -webkit-box-shadow: 1px 1px 6px rgba(34, 34, 32, 0.1);
+                  box-shadow: 1px 1px 6px rgba(34, 34, 32, 0.1); }
         #header section.navigation h1#logoTag a img {
           display: block;
           margin: 0 auto 0;
@@ -3158,11 +3162,15 @@ section {
       -webkit-transition: -webkit-transform 0.5s ease;
       transition: -webkit-transform 0.5s ease;
       transition: transform 0.5s ease;
-      transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
+      transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+      -webkit-box-shadow: -2px 2px 0px rgba(34, 34, 32, 0.05);
+              box-shadow: -2px 2px 0px rgba(34, 34, 32, 0.05); }
       @media screen and (max-width: 39.9375em) {
         #header section.navigation nav#main-nav {
           height: 50px;
-          right: 1.5rem; } }
+          right: 1.5rem;
+          -webkit-box-shadow: none;
+                  box-shadow: none; } }
       #header section.navigation nav#main-nav.peek {
         position: fixed;
         top: -132px;
@@ -3381,7 +3389,14 @@ section {
   position: relative;
   z-index: 100;
   background: #fefefe;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-box-shadow: -2px 2px 0px rgba(34, 34, 32, 0.05);
+          box-shadow: -2px 2px 0px rgba(34, 34, 32, 0.05);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .nav-toggle:hover, #connect .close:hover {
+    -webkit-box-shadow: 1px 1px 6px rgba(34, 34, 32, 0.1);
+            box-shadow: 1px 1px 6px rgba(34, 34, 32, 0.1); }
   @media screen and (min-width: 50em) {
     .nav-toggle, #connect .close {
       display: none; } }
@@ -3394,8 +3409,8 @@ section {
     position: absolute;
     display: block;
     content: '';
-    -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out; }
+    -webkit-transition: all 1s cubic-bezier(0.75, 0, 0.5, 2);
+    transition: all 1s cubic-bezier(0.75, 0, 0.5, 2); }
   .nav-toggle span:after, #connect .close span:after, .nav-toggle span:before, #connect .close span:before {
     cursor: pointer;
     border-radius: 6px;
@@ -3405,8 +3420,8 @@ section {
     position: absolute;
     display: block;
     content: '';
-    -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out; }
+    -webkit-transition: all 1s cubic-bezier(0.75, 0, 0.5, 2);
+    transition: all 1s cubic-bezier(0.75, 0, 0.5, 2); }
   .nav-toggle span:before, #connect .close span:before {
     top: -5px; }
   .nav-toggle span:after, #connect .close span:after {
@@ -3736,6 +3751,12 @@ section {
 .home-header {
   height: auto !important;
   min-height: auto !important; }
+
+#statement-intro {
+  padding: 6rem 0; }
+
+.iPhone #statement-intro {
+  padding-top: 0 !important; }
 
 #discover > .row {
   background: #fefefe; }
@@ -4383,6 +4404,10 @@ a.link {
   .talk .row .row .columns:first-of-type {
     margin-bottom: 12px !important; } }
 
+@media screen and (max-width: 39.9375em) {
+  .talk .phone {
+    margin-top: 1rem; } }
+
 .serif {
   font-family: "youngserifregular", Georgia, serif; }
 
@@ -4416,15 +4441,15 @@ h2 {
     color: #222220; }
   h2.brand-vision {
     font-size: 4rem;
-    line-height: 1.125;
-    padding-top: 0.2975rem;
-    margin-bottom: 1.2025rem; }
+    line-height: 1;
+    padding-top: 0.235rem;
+    margin-bottom: 1.265rem; }
     @media print, screen and (min-width: 64em) {
       h2.brand-vision {
         font-size: 5rem;
-        line-height: 1.2;
-        padding-top: 0.335rem;
-        margin-bottom: 1.165rem; } }
+        line-height: 1.125;
+        padding-top: 0.2975rem;
+        margin-bottom: 1.2025rem; } }
 
 h3 {
   font-size: 3rem;

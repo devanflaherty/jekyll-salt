@@ -31,9 +31,9 @@ h2 {
     color: $primary-color;
   }
   &.brand-vision {
-    @include baseline(4rem, 4);
+    @include baseline(4rem, 3);
     @include breakpoint(large) {
-      @include baseline(5rem, 5);
+      @include baseline(5rem, 4);
     }
   }
 }

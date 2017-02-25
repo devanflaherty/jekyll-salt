@@ -41,7 +41,7 @@
       top: 0;
       width: 5rem;
       height: 140px;
-      transition: all 0.5s ease;
+      transition: all 0.5s ease-in-out;
 
       @include breakpoint(small only) {
         left: 1.5rem;
@@ -63,11 +63,14 @@
         width: 5rem;
         height: 140px;
         text-align: center;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in-out;
         padding-top: .33rem;
+        box-shadow: 2px 2px 0px rgba($black, 0.05);
+
         &:hover {
           padding-top: 24px;
           height: 160px;
+          box-shadow: 1px 1px 6px rgba($black, 0.1);
         }
         img {
           display: block;
@@ -91,9 +94,12 @@
       z-index: 100;
       text-align: right;
       transition: transform 0.5s ease;
+      box-shadow: -2px 2px 0px rgba($black, 0.05);
+
       @include breakpoint(small only) {
         height: 50px;
         right: 1.5rem;
+        box-shadow: none;
       }
       &.peek {
         position: fixed;
@@ -274,6 +280,13 @@
   z-index: 100;
   background: $white;
   cursor: pointer;
+  box-shadow: -2px 2px 0px rgba($black, 0.05);
+  transition: all 0.5s ease;
+
+  &:hover {
+    box-shadow: 1px 1px 6px rgba($black, 0.1);
+  }
+
   @include breakpoint(800) {
     display: none;
   }
@@ -286,7 +299,7 @@
     position: absolute;
     display: block;
     content: '';
-    transition: all 500ms ease-in-out;
+    transition: all 1s cubic-bezier(.75,0,.50, 2);
   }
   span:after, span:before {
     cursor: pointer;
@@ -297,7 +310,7 @@
     position: absolute;
     display: block;
     content: '';
-    transition: all 500ms ease-in-out;
+    transition: all 1s cubic-bezier(.75,0,.50, 2);
   }
   span:before {
     top: -5px;
