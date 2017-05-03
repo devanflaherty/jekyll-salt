@@ -23,7 +23,11 @@ backgroundColor: "#242424"
 contrast: true
 feature: true
 ---
-![](http://media.saltagency.co/projects/crossroads/images/crossroads-head.jpg)
+<p>
+<img src="http://media.saltagency.co/projects/crossroads/images/crossroads-head-medium.jpg" class="show-for-medium">
+<img src="http://media.saltagency.co/projects/crossroads/images/crossroads-head-small.jpg" class="hide-for-medium">
+</p>
+
 
 ## At a Crossroads
 
