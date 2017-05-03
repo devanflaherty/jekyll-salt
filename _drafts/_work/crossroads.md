@@ -28,6 +28,11 @@ We all find ourselves at times at some sort of fork in the road in a literal and
 
 We previously began work for the church led by Pastor Daniel Fusco at the end of 2015 when we were contracted to design and build their site within wordpress. The site was designed for a single church, with a singular location, with events and ministries tied to that one location. So a year later when Crossroads Community Church took ground in Portland, OR the sister city to their location in Vancouver, WA they knew they would have to rethink how they did web. *Enter Salt Agency*.
 
+###### TL;DR
+We designed and developed wordpress site for Crossroads Community Church and their Pastor Daniel Fusco. You can check out the sites by clicking the links below.
+
+<a class="link" href="http://crossroadschurch.net">crossroadschurch.net</a><a class="link" href="http://danielfusco.com">danielfusco.com</a>
+
 ### Welcome back
 We love return clients. When a work relationship becomes more of a relationship with work mixed in. Most can attest that the biggest hinderance to the start of any project are the two entities, in this case, the creative agency and the client, learning to speak the same language. You have two cultures, two tribes coming together for a common purpose, so communication is vital. To one entity a "wireframe" could be a flowchart of views to another it could be a napkin sketch of where components would go on a page. So crafting this new "trader tongue" between the two is vital, but if you already speak the same language, well then we can jump straight to the fun.
 
