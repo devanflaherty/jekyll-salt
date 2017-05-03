@@ -31,9 +31,9 @@ We previously began work for the church led by Pastor Daniel Fusco at the end of
 ###### TL;DR
 We designed and developed wordpress site for Crossroads Community Church and their Pastor Daniel Fusco. You can check out the sites by clicking the links below.
 
-<a class="link" href="http://crossroadschurch.net">crossroadschurch.net</a><a class="link" href="http://danielfusco.com">danielfusco.com</a>
+<a class="link" href="http://crossroadschurch.net">crossroadschurch.net</a> <a class="link" href="http://danielfusco.com">danielfusco.com</a>
 
-### Welcome back
+#### Welcome back
 We love return clients. When a work relationship becomes more of a relationship with work mixed in. Most can attest that the biggest hinderance to the start of any project are the two entities, in this case, the creative agency and the client, learning to speak the same language. You have two cultures, two tribes coming together for a common purpose, so communication is vital. To one entity a "wireframe" could be a flowchart of views to another it could be a napkin sketch of where components would go on a page. So crafting this new "trader tongue" between the two is vital, but if you already speak the same language, well then we can jump straight to the fun.
 
 It was late november when Jason their Creative Pastor reached out to me that they needed to knock out a site for their Pastor Daniel Fusco in only two weeks. He had a new radio and TV program going out and they needed a new site that would look good and was easy to update that they could point the audience toward. **Challenge accepted**. 
