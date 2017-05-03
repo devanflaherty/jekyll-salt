@@ -26,6 +26,7 @@ feature: true
 <p>
 <img src="http://media.saltagency.co/projects/crossroads/images/crossroads-head-medium.jpg" class="show-for-medium">
 </p>
+
 <p>
 <img src="http://media.saltagency.co/projects/crossroads/images/crossroads-head-small.jpg" class="hide-for-medium">
 </p>
