@@ -1,9 +1,4 @@
 <!--  Showcase -->
-{% assign pLimit = 3 %}
-{% if page.title == "Showcase" %}
-  {% assign pLimit = 9 %}
-{% endif %}
-
 {% assign featured = site.work | where:"feature", "true" %}
 {% assign fSize = featured | size %}
 {% assign list = site.work | where:"feature","false" %}
@@ -19,7 +14,7 @@
         {% include content/showcase-tile.html %}
       {% endfor %}
 
-      {% for item in list reversed limit:pLimit %}
+      {% for item in list reversed limit:9 %}
         {% include content/showcase-tile.html %}
       {% endfor %}
 
