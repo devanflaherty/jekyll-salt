@@ -37,7 +37,7 @@ It was simple enough, a phone call and email of exactly how they needed the site
 
 ![](http://media.saltagency.co/projects/crossroads/images/df-site.jpg)
 
-### Can you redefine, redefine?
+#### Before we design we must redefine
 There is nothing like being on the home stretch of a rush project. It's consumed so much of your thoughts and time, and you see the sun over the ledge like the perverbial Gandalf running down to bring victory to the ensuing battle. But you don't anticipate for that project, before it even to have finished to run straight into another, "We need this now" type of project. 
 
 An existing church in Portland, OR was soon to become a secondary location for Crossroads Community Church based out of Vancouver, WA. We typically call churches with multiple locations as multi-site churches, with the Portland and Vancouver location being separate campuses belonging to one overall church body. So if you had previously built a site to target one campus, which then embodied the entirety of the church, but had to separate parts of the global Crossroads Community Church from separate locations it easy to see where problems would arise. So we had to go through and redefine exactly what a web presence met for Crossroads.
