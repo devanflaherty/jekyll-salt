@@ -21,7 +21,7 @@ primaryColor: "#00a0dc"
 secondaryColor: "#e5e5e5"
 backgroundColor: "#242424"
 contrast: true
-feature: ''
+feature: true
 ---
 
 
