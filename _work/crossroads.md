@@ -23,6 +23,8 @@ backgroundColor: "#242424"
 contrast: true
 feature: true
 ---
+![](http://media.saltagency.co/projects/crossroads/images/crossroads-header.jpg)
+
 ## At a Crossroads
 
 We all find ourselves at times at some sort of fork in the road in a literal and philosophical sense and Crossroads Community Church had come to their own.
@@ -34,9 +36,9 @@ We previously began work for the church led by Pastor Daniel Fusco at the end of
 We designed and developed wordpress site for Crossroads Community Church and their Pastor Daniel Fusco. You can check out the sites by clicking the links below.
 
 <a class="link" href="http://crossroadschurch.net">crossroadschurch.net</a> <a class="link" href="http://danielfusco.com">danielfusco.com</a>  
-<br><br>  
+<br>
   
-  
+---
 
 ### Welcome back
 
