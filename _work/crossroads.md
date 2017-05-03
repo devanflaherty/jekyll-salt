@@ -32,11 +32,11 @@ feature: true
 </p>
 
 
-## At a Crossroads
-
-We all find ourselves at times at some sort of fork in the road in a literal and philosophical sense and Crossroads Community Church had come to their own.
+## A crossing of roads
 
 We previously began work for the church led by Pastor Daniel Fusco at the end of 2015 when we were contracted to design and build their site within wordpress. The site was designed for a single church, with a singular location, with events and ministries tied to that one location. So a year later when Crossroads Community Church took ground in Portland, OR the sister city to their location in Vancouver, WA they knew they would have to rethink how they did web. *Enter Salt Agency*.
+
+> We all find ourselves at times at an intersection of paths in a literal and philosophical sense and Crossroads Community Church had come to their own.
 
 ###### TL;DR
 
