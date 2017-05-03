@@ -62,13 +62,15 @@
 
 
 
-  <header id="header" class="expanded flex   vh">
+  <header id="header" class="expanded flex   home-header">
     
 
     <section class="navigation">
       <h1 id="logoTag" class="peek">
         <a href="/">
-          <img src="http://media.saltagency.co/images/design/drawn-logo-fill.png" width="60" alt="Salt : Logo">
+          <img src="http://media.saltagency.co/images/touchmarks/Crown.png" width="24" alt="Salt : Logo">
+          <img src="http://media.saltagency.co/images/touchmarks/shield.png" width="20" alt="Salt : Logo">
+          <img src="http://media.saltagency.co/images/touchmarks/keys.png" width="24" alt="Salt : Logo">
           <span>salt</span>
         </a>
       </h1>
@@ -76,10 +78,11 @@
       <nav id="main-nav" class="peek">
         <div class="row expanded align-right">
           <ul class="columns shrink" data-show="show">
-            <li><a class="HomeNav" href="/">home</a></li>
+            <div class="selector"></div>
+<li><a class="HomeNav" href="/">home</a></li>
 <li><a class="ShowcaseNav" href="/showcase">showcase</a></li>
-<li><a class="ProcessNav"  href="/process">process</a></li>
-<li><a class="BlogNav"  href="http://blog.saltagency.co">blog</a></li>
+<li><a class="WhoNav"  href="/who">who</a></li>
+<li><a class="BlogNav"  href="https://medium.com/salt-agency">blog</a></li>
 <li class="show-for-medium"><a class="toggleConnect" href="#">connect</a></li>
 
           </ul>
@@ -89,36 +92,20 @@
     </section>
 
     
-      <section class="content row">
-        <div id="headline" class="small-10 medium-5 large-4 columns">
-          <p>Crafting compelling stories executed through beautiful design, destined to make an impact.</p>
-          
-            <div class="links">
-              
-                <a class="button" href="#showcaseList">Get Started</a><br>
-              
-            </div>
-          
-        </div>
 
-        <div id="subtitle" class="small-12 medium-7 large-8 columns">
-          <h2>Let's Make Waves</h2>
-        </div>
-      </section>
     
 
-    <div class="go-down">
-      <a href="#main" class="go-down-icon"></a>
-    </div>
+    
 
   </header>
 
   <div class="full-nav">
   <ul>
-    <li><a class="HomeNav" href="/">home</a></li>
+    <div class="selector"></div>
+<li><a class="HomeNav" href="/">home</a></li>
 <li><a class="ShowcaseNav" href="/showcase">showcase</a></li>
-<li><a class="ProcessNav"  href="/process">process</a></li>
-<li><a class="BlogNav"  href="http://blog.saltagency.co">blog</a></li>
+<li><a class="WhoNav"  href="/who">who</a></li>
+<li><a class="BlogNav"  href="https://medium.com/salt-agency">blog</a></li>
 <li class="show-for-medium"><a class="toggleConnect" href="#">connect</a></li>
 
   </ul>
@@ -136,18 +123,18 @@
 
     <main id="main">
       <!-- Statement -->
-<section id="statement-outro" class="small-pad-medium medium-pad-large white-bg">
+<section id="statement-intro" class="off-white-bg">
   <div class="row align-center align-middle text-center">
     <div class="columns">
       <img id="skull-icon" class="drawicon" src="http://media.saltagency.co/images/design/skull.png" alt="skull">
 
       <h4 class="hint">
-        We don’t keep tabs on the status quo.
+        Crafting compelling stories executed through beautiful design, destined to make an impact.
       </h4>
       <h2 class="brand-vision statement-pop">
         Defy<br class="hide-for-medium"> Reason
       </h2>
-      <a class="button" style="margin-top:20px;" href="/process">Our Process</a>
+      <a class="button" style="margin-top:1.25rem;" href="#showcaseList">Our Work</a>
     </div>
   </div>
 </section>
@@ -166,7 +153,7 @@
 
 
 <section>
-  <ul id="showcaseList" class="flex expanded">
+  <ul id="showcaseList" class="row align-center">
     
 
     
@@ -217,81 +204,87 @@
 
 
 <!-- Process -->
-<section id="discover" class="row align-middle align-center small-pad-medium">
-  <div class="small-11 large-10 columns">
-    <h3 style="padding-bottom: 60px">Passion: Branding
-      &amp; UX</h3>
+<section id="discover">
+  <div class="row align-middle align-center small-pad-medium">
+    <div class="small-11 large-10 columns">
+      <h3 style="padding-bottom: 4rem">Passion: Branding
+        &amp; UX</h3>
 
-    <div id="discovery-columns" class="row align-center">
-      <div class="small-12 medium-10 large-4 columns">
-        <h6>Story</h6>
-        <p>
-          There is always more beneath the surface of a good brand, and at Salt our job is to act as creative treasure hunters; Seeking out greatness in the depths of who you are and bringing your story to the surface.
-        </p>
+      <div id="discovery-columns" class="row align-center is-collapse-child">
+        <div class="small-12 medium-10 large-4 columns">
+          <h6>Story</h6>
+          <p>
+            There is always more beneath the surface of a good brand, and at Salt our job is to act as creative treasure hunters; Seeking out greatness in the depths of who you are and bringing your story to the surface.
+          </p>
+        </div>
+        <div class="small-10 small-offset-1 medium-9 large-4 large-offset-0 columns">
+          <h6>Beauty</h6>
+          <p>
+            Men of legend believed there was greatness on the horizon. It drove them to take risks and defy reason, all to seek out a beautiful treasure. We want our brands to be pioneers and not settle for the status-quo. Beauty is non-negotiable.
+          </p>
+        </div>
+        <div class="small-12 medium-10 large-4 columns">
+          <h6>Impact</h6>
+          <p>
+            We believe your brand should have a significant impact that drives an action. Our goal isn’t to just create beautiful brands and digital experiences, but rather to create something that will make waves and shake the industry.
+          </p>
+        </div>
       </div>
-      <div class="small-10 small-offset-1 medium-9 large-4 large-offset-0 columns">
-        <h6>Beauty</h6>
-        <p>
-          Men of legend believed there was greatness on the horizon. It drove them to take risks and defy reason, all to seek out a beautiful treasure. We want our brands to be pioneers and not settle for the status-quo. Beauty is non-negotiable.
-        </p>
-      </div>
-      <div class="small-12 medium-10 large-4 columns">
-        <h6>Impact</h6>
-        <p>
-          We believe your brand should have a significant impact that drives an action. Our goal isn’t to just create beautiful brands and digital experiences, but rather to create something that will make waves and shake the industry.
-        </p>
+      <div class="row discover-link">
+        <div class="columns small-12 medium-3 large-4 medium-offset-1 large-offset-0">
+          <a href="/process#heart" class="link">
+            Our Heart
+          </a>
+        </div>
+        <div class="columns small-12 medium-3 large-4">
+          <br class="hide-for-medium">
+          <a href="/process#services" class="link">
+            What We Do
+          </a>
+        </div>
+        <div class="columns small-12 medium-3 large-4">
+          <br class="hide-for-medium">
+          <a href="/showcase" class="link">
+            Our Work
+          </a>
+        </div>
       </div>
     </div>
-    <div class="row discover-link">
-      <div class="columns small-12 medium-3 large-4 medium-offset-1 large-offset-0">
-        <a href="/process#heart" class="link">
-          Our Heart
-        </a>
-      </div>
-      <div class="columns small-12 medium-3 large-4">
-        <br class="hide-for-medium">
-        <a href="/process#services" class="link">
-          What We Do
-        </a>
-      </div>
-      <div class="columns small-12 medium-3 large-4">
-        <br class="hide-for-medium">
-        <a href="/showcase" class="link">
-          Our Work
-        </a>
-      </div>
-    </div>
-  </div>
+  </div><!--close row-->
 </section>
 
 <!-- SERVICE LIST -->
-<section id="services" class="contrast-bg small-pad-medium text-center contrast-text">
-  <ul id="serviceList" class="row small-up-2 medium-up-4 large-up-4 text-center">
+<section id="services" class="text-center contrast-text">
+  <div class="row contrast-bg small-pad-medium ">
+    <div class="column">
+      <ul id="serviceList" class="row small-up-2 medium-up-2 large-up-4 text-center">
 
-    
-      <li class="columns">
-        <img src="http://media.saltagency.co/images/drawn-services/key.png" alt="Creative Direction icon"/>
-        <span>Creative Direction</span>
-      </li>
-    
-      <li class="columns">
-        <img src="http://media.saltagency.co/images/drawn-services/pencil.png" alt="Design icon"/>
-        <span>Design</span>
-      </li>
-    
-      <li class="columns">
-        <img src="http://media.saltagency.co/images/drawn-services/hand.png" alt="Web Development icon"/>
-        <span>Web Development</span>
-      </li>
-    
-      <li class="columns">
-        <img src="http://media.saltagency.co/images/drawn-services/helm.png" alt="Consulting icon"/>
-        <span>Consulting</span>
-      </li>
-    
-  </ul>
-  <br><br>
-  <a href="/process" class="link">More about what we do</a>
+        
+          <li class="columns">
+            <img src="http://media.saltagency.co/images/drawn-services/key.png" alt="Brand Identity icon"/>
+            <span>Brand Identity</span>
+          </li>
+        
+          <li class="columns">
+            <img src="http://media.saltagency.co/images/drawn-services/pencil.png" alt="Graphic Design icon"/>
+            <span>Graphic Design</span>
+          </li>
+        
+          <li class="columns">
+            <img src="http://media.saltagency.co/images/drawn-services/hand.png" alt="Web Dev/UX icon"/>
+            <span>Web Dev/UX</span>
+          </li>
+        
+          <li class="columns">
+            <img src="http://media.saltagency.co/images/drawn-services/helm.png" alt="Consulting icon"/>
+            <span>Consulting</span>
+          </li>
+        
+      </ul>
+      <br><br>
+      <a href="/who" class="link">More about what we do</a>
+    </div>
+  </div>
 </section>
 
 <!-- Statement -->
@@ -306,28 +299,28 @@
       <h2 class="brand-vision statement-pop">
         Stand <br class="hide-for-medium">Apart
       </h2>
-      <a class="button" style="margin-top:20px;" href="#discover">Our Heart</a>
+      <a class="button" style="margin-top:1.25rem;" href="#discover">Our Heart</a>
     </div>
   </div>
 </section>
 
 <!-- Talk-->
 <!-- TALK -->
-<section id="talk" class="small-pad-medium talk ">
-  <div class="row align-center align-middle">
+<section id="talk" class="talk">
+  <div class="row align-center align-middle small-pad-medium white-bg">
     <div class="small-11 medium-6 large-5 columns">
       <h2>Let's<br> Make<br> Waves</h2>
     </div>
     <div class="small-11 medium-5 large-5 columns">
       <h6>It all comes down to this</h6>
 
-      <p>One of our main pillars is to "Make Waves", we want to help you make an impact. More than just friendly conversation, or clever design, we believe we can help you create change. So what are you waiting for?</p>
+      <p>We're looking for great-to-work-with clients to help make their stories heard and products experienced. Chances are you are looking for someone like us, so let's talk.</p>
 
     <div class="row">
-      <div class="columns small-6 medium-12 large-6">
+      <div class="columns small-12 medium-12 large-6">
         <a href="mailto:hello@saltagency.co" class="link">hello@saltagency.co</a>
       </div>
-      <div class="columns small-6 medium-12 large-6">
+      <div class="phone columns small-12 medium-12 large-6">
         <a class="tel link" href="tel:480.388.1741">480.388.1741</a>
       </div>
     </div>
@@ -340,13 +333,25 @@
     </main>
 
       <footer id="footer">
-    <section class="row align-center align-middle">
-      <div class="columns branding shrink">
-        <p class="vision">Make Waves</p>
+    <div class="row align-center align-middle">
+      <div class="columns shrink">
+        <img width="32" src="http://media.saltagency.co/images/touchmarks/Crown.png">
+        <!-- <p class="vision">Make Waves</p>
         <h3>Salt</h3>
-        <p class="vision">Defy Reason</p>
+        <p class="vision">Defy Reason</p> -->
       </div>
-    </section>
+      <div class="columns shrink branding">
+        <img width="24" src="http://media.saltagency.co/images/touchmarks/shield.png">
+      </div>
+      <div class="columns shrink branding">
+        <img width="32" src="http://media.saltagency.co/images/touchmarks/keys.png">
+      </div>
+    </div>
+    <div class="row align-center align-middle">
+      <div class="columns shrink branding">
+        <span>MADE WITH SALT</span>
+      </div>
+    </div>
   </footer>
 
 <div id="connect">
@@ -359,8 +364,8 @@
         <p>Follow us and be current with our work, adventures, meet-ups and other such foolery.</p>
 
         <div class="row align-middle">
-          <div class="small-7 align-center columns contrast-text social-header">
-            <div class="flex social-list expanded columns text-center">
+          <div class="small-9 align-center columns contrast-text social-header expanded">
+            <div class="flex social-list expanded columns">
               <div>
   <a href="http://dribbble.com/devanflaherty" class="link" target="_blank"><i class="fa fa-dribbble"></i></a>
 </div>

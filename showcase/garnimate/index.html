@@ -57,8 +57,11 @@
 </script>
 
     <style>
-      #main-nav li a:hover {
-        border-color: #FF3C00!important;
+      #main-nav .selector {
+        background-color: #FF3C00!important;
+      }
+      #main-nav li a.active span {
+        background-color: #FF3C00!important;
       }
       .overlay {
         background-color: #FF3C00!important;
@@ -86,7 +89,9 @@
     <section class="navigation">
       <h1 id="logoTag" class="peek">
         <a href="/">
-          <img src="http://media.saltagency.co/images/design/drawn-logo-fill.png" width="60" alt="Salt : Logo">
+          <img src="http://media.saltagency.co/images/touchmarks/Crown.png" width="24" alt="Salt : Logo">
+          <img src="http://media.saltagency.co/images/touchmarks/shield.png" width="20" alt="Salt : Logo">
+          <img src="http://media.saltagency.co/images/touchmarks/keys.png" width="24" alt="Salt : Logo">
           <span>salt</span>
         </a>
       </h1>
@@ -94,10 +99,11 @@
       <nav id="main-nav" class="peek">
         <div class="row expanded align-right">
           <ul class="columns shrink" data-show="show">
-            <li><a class="HomeNav" href="/">home</a></li>
+            <div class="selector"></div>
+<li><a class="HomeNav" href="/">home</a></li>
 <li><a class="ShowcaseNav" href="/showcase">showcase</a></li>
-<li><a class="ProcessNav"  href="/process">process</a></li>
-<li><a class="BlogNav"  href="http://blog.saltagency.co">blog</a></li>
+<li><a class="WhoNav"  href="/who">who</a></li>
+<li><a class="BlogNav"  href="https://medium.com/salt-agency">blog</a></li>
 <li class="show-for-medium"><a class="toggleConnect" href="#">connect</a></li>
 
           </ul>
@@ -107,7 +113,7 @@
     </section>
 
     
-      <section class="content row align-center">
+      <section class="content row align-center no-pull colapse">
         <div id="subtitle" class="small-12 medium-10 columns">
           <h2 class="text-center">Garnimate</h2>
         </div>
@@ -117,18 +123,21 @@
       </section>
     
 
-    <div class="go-down">
-      <a href="#main" class="go-down-icon"></a>
-    </div>
+    
+      <div class="go-down">
+        <a href="#main" class="go-down-icon"></a>
+      </div>
+    
 
   </header>
 
   <div class="full-nav">
   <ul>
-    <li><a class="HomeNav" href="/">home</a></li>
+    <div class="selector"></div>
+<li><a class="HomeNav" href="/">home</a></li>
 <li><a class="ShowcaseNav" href="/showcase">showcase</a></li>
-<li><a class="ProcessNav"  href="/process">process</a></li>
-<li><a class="BlogNav"  href="http://blog.saltagency.co">blog</a></li>
+<li><a class="WhoNav"  href="/who">who</a></li>
+<li><a class="BlogNav"  href="https://medium.com/salt-agency">blog</a></li>
 <li class="show-for-medium"><a class="toggleConnect" href="#">connect</a></li>
 
   </ul>
@@ -148,7 +157,7 @@
       <!-- PROJECT DETAILS -->
       <section id="project" class="small-pad-medium off-white-bg">
         <div class="row align-center align-middle medium-text-center">
-          <div class="small-11 medium-6 columns">
+          <div class="small-11 medium-8 columns">
             <h5>
               Being a fun & exquisite motion graphics artist we created a brand we felt would do his work justice, and would lend it self to have movement and pop when utilized in his personal reel.
             </h5>
@@ -176,7 +185,7 @@
 <p>I’m not always keen on posting work I do for friends but sometimes you just have fun with a project and need to share it with the world. So without further a due here is what we came up with for Garner and his freelance moniker <em>Garnimate</em>.</p>
 
 <p>
-  <img class="show-for-medium" src="http://media.saltagency.co/projects/garnimate/images/panel-1-Left.png" />
+  <img class="hide-for-medium" src="http://media.saltagency.co/projects/garnimate/images/panel-1-Left.png" />
 </p>
 
 <p><img src="http://media.saltagency.co/projects/garnimate/images/panel-1-right.png" alt="Alt text" /> <img src="http://media.saltagency.co/projects/garnimate/images/guide-right.png" alt="Alt text" /></p>
@@ -201,6 +210,8 @@
 <p>The brand for a motionographer is something that if done right, can be added to your arsenal. Motionographers a lot of time create a reel of their best work. A short video cutting from clip-to-clip of what they consider their best work. My favorite reels are the ones where the artist works in their own brand in-between clips, operating as a narrator to the reel. I wanted to make sure we could provide that for Garnimate, and not just give him the assets to do so, but giving him assets he could have fun with.</p>
 
 <p><img src="http://media.saltagency.co/projects/garnimate/images/card-left.png" alt="Alt text" /> <img src="http://media.saltagency.co/projects/garnimate/images/card-right.png" alt="Alt text" /></p>
+
+<p><img src="http://media.saltagency.co/projects/garnimate/images/panel-3-full.png" alt="Alt text" /></p>
 
 <h4 id="it-had-to-be-organic">It had to be organic</h4>
 
@@ -262,24 +273,36 @@
       </section>
 
       <!-- PROJECT FOOTER -->
-      <section class="small-pad-medium secondary-bg">
-        <div class="row align-center text-center">
+      <section>
+        <div class="row align-center text-center small-pad">
           <div class="small-9 columns">
             <h3>Back to the goods</h3><br>
-            <a class="link" href="/showcase">Showcase</a>
+            <a class="button" href="/showcase">Showcase</a>
           </div>
         </div>
       </section>
     </main>
 
       <footer id="footer">
-    <section class="row align-center align-middle">
-      <div class="columns branding shrink">
-        <p class="vision">Make Waves</p>
+    <div class="row align-center align-middle">
+      <div class="columns shrink">
+        <img width="32" src="http://media.saltagency.co/images/touchmarks/Crown.png">
+        <!-- <p class="vision">Make Waves</p>
         <h3>Salt</h3>
-        <p class="vision">Defy Reason</p>
+        <p class="vision">Defy Reason</p> -->
       </div>
-    </section>
+      <div class="columns shrink branding">
+        <img width="24" src="http://media.saltagency.co/images/touchmarks/shield.png">
+      </div>
+      <div class="columns shrink branding">
+        <img width="32" src="http://media.saltagency.co/images/touchmarks/keys.png">
+      </div>
+    </div>
+    <div class="row align-center align-middle">
+      <div class="columns shrink branding">
+        <span>MADE WITH SALT</span>
+      </div>
+    </div>
   </footer>
 
 <div id="connect">
@@ -292,8 +315,8 @@
         <p>Follow us and be current with our work, adventures, meet-ups and other such foolery.</p>
 
         <div class="row align-middle">
-          <div class="small-7 align-center columns contrast-text social-header">
-            <div class="flex social-list expanded columns text-center">
+          <div class="small-9 align-center columns contrast-text social-header expanded">
+            <div class="flex social-list expanded columns">
               <div>
   <a href="http://dribbble.com/devanflaherty" class="link" target="_blank"><i class="fa fa-dribbble"></i></a>
 </div>

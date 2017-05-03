@@ -68,7 +68,9 @@
     <section class="navigation">
       <h1 id="logoTag" class="peek">
         <a href="/">
-          <img src="http://media.saltagency.co/images/design/drawn-logo-fill.png" width="60" alt="Salt : Logo">
+          <img src="http://media.saltagency.co/images/touchmarks/Crown.png" width="24" alt="Salt : Logo">
+          <img src="http://media.saltagency.co/images/touchmarks/shield.png" width="20" alt="Salt : Logo">
+          <img src="http://media.saltagency.co/images/touchmarks/keys.png" width="24" alt="Salt : Logo">
           <span>salt</span>
         </a>
       </h1>
@@ -76,10 +78,11 @@
       <nav id="main-nav" class="peek">
         <div class="row expanded align-right">
           <ul class="columns shrink" data-show="show">
-            <li><a class="HomeNav" href="/">home</a></li>
+            <div class="selector"></div>
+<li><a class="HomeNav" href="/">home</a></li>
 <li><a class="ShowcaseNav" href="/showcase">showcase</a></li>
-<li><a class="ProcessNav"  href="/process">process</a></li>
-<li><a class="BlogNav"  href="http://blog.saltagency.co">blog</a></li>
+<li><a class="WhoNav"  href="/who">who</a></li>
+<li><a class="BlogNav"  href="https://medium.com/salt-agency">blog</a></li>
 <li class="show-for-medium"><a class="toggleConnect" href="#">connect</a></li>
 
           </ul>
@@ -89,7 +92,8 @@
     </section>
 
     
-      <section class="content row">
+
+      <section class="content row no-pull collapse">
         <div id="headline" class="small-10 medium-5 large-4 columns">
           <p>Crafting compelling stories executed through beautiful design, destined to make an impact.</p>
           
@@ -107,18 +111,21 @@
       </section>
     
 
-    <div class="go-down">
-      <a href="#main" class="go-down-icon"></a>
-    </div>
+    
+      <div class="go-down">
+        <a href="#main" class="go-down-icon"></a>
+      </div>
+    
 
   </header>
 
   <div class="full-nav">
   <ul>
-    <li><a class="HomeNav" href="/">home</a></li>
+    <div class="selector"></div>
+<li><a class="HomeNav" href="/">home</a></li>
 <li><a class="ShowcaseNav" href="/showcase">showcase</a></li>
-<li><a class="ProcessNav"  href="/process">process</a></li>
-<li><a class="BlogNav"  href="http://blog.saltagency.co">blog</a></li>
+<li><a class="WhoNav"  href="/who">who</a></li>
+<li><a class="BlogNav"  href="https://medium.com/salt-agency">blog</a></li>
 <li class="show-for-medium"><a class="toggleConnect" href="#">connect</a></li>
 
   </ul>
@@ -149,7 +156,7 @@
 
 
 <section>
-  <ul id="showcaseList" class="flex expanded">
+  <ul id="showcaseList" class="row align-center">
     
       
         <li class="columns">
@@ -252,20 +259,20 @@
       <h2 class="brand-vision statement-pop">
         We<br class="hide-for-medium"> Think<br class="hide-for-medium"> Different
       </h2>
-      <a class="button" style="margin-top:20px;" href="/process#services">What We Do</a>
+      <a class="button" style="margin-top:1.25rem;" href="/who#services">What We Do</a>
     </div>
   </div>
 </section>
 
 <!-- Dribbble -->
 <!-- DRIBBBLE -->
-<section id="dribbble" class="off-white-bg small-pad-medium">
-  <div class="row align-center align-middle">
+<section id="dribbble" style="margin-bottom: 4rem;">
+  <div class="white-bg small-pad-medium row align-center align-middle">
     <div class="small-11 medium-10 columns">
       <h6>
         Works In Progress
       </h6>
-      <div class="row shots small-up-2 medium-up-4"></div>
+      <div class="row shots small-up-2 medium-up-4 is-collapse-child"></div>
       <br>
       <a href="http://dribbble.com/devanflaherty" class="link">View Our Dribbble</a>
     </div>
@@ -275,8 +282,8 @@
 
 <!-- TALK -->
 <!-- TALK -->
-<section id="talk" class="small-pad-medium talk tertiary-bg contrast-text">
-  <div class="row align-center align-middle">
+<section id="talk" class="talk">
+  <div class="row align-center align-middle small-pad-medium tertiary-bg contrast-text">
     <div class="small-11 medium-6 large-5 columns">
       <h2>Hoist<br> The<br> Sails</h2>
     </div>
@@ -286,10 +293,10 @@
       <p>Give us a call, email, send us a raven, what ever you prefer, and let's kick some ass.</p>
 
     <div class="row">
-      <div class="columns small-6 medium-12 large-6">
+      <div class="columns small-12 medium-12 large-6">
         <a href="mailto:hello@saltagency.co" class="link">hello@saltagency.co</a>
       </div>
-      <div class="columns small-6 medium-12 large-6">
+      <div class="phone columns small-12 medium-12 large-6">
         <a class="tel link" href="tel:480.388.1741">480.388.1741</a>
       </div>
     </div>
@@ -302,13 +309,25 @@
     </main>
 
       <footer id="footer">
-    <section class="row align-center align-middle">
-      <div class="columns branding shrink">
-        <p class="vision">Make Waves</p>
+    <div class="row align-center align-middle">
+      <div class="columns shrink">
+        <img width="32" src="http://media.saltagency.co/images/touchmarks/Crown.png">
+        <!-- <p class="vision">Make Waves</p>
         <h3>Salt</h3>
-        <p class="vision">Defy Reason</p>
+        <p class="vision">Defy Reason</p> -->
       </div>
-    </section>
+      <div class="columns shrink branding">
+        <img width="24" src="http://media.saltagency.co/images/touchmarks/shield.png">
+      </div>
+      <div class="columns shrink branding">
+        <img width="32" src="http://media.saltagency.co/images/touchmarks/keys.png">
+      </div>
+    </div>
+    <div class="row align-center align-middle">
+      <div class="columns shrink branding">
+        <span>MADE WITH SALT</span>
+      </div>
+    </div>
   </footer>
 
 <div id="connect">
@@ -321,8 +340,8 @@
         <p>Follow us and be current with our work, adventures, meet-ups and other such foolery.</p>
 
         <div class="row align-middle">
-          <div class="small-7 align-center columns contrast-text social-header">
-            <div class="flex social-list expanded columns text-center">
+          <div class="small-9 align-center columns contrast-text social-header expanded">
+            <div class="flex social-list expanded columns">
               <div>
   <a href="http://dribbble.com/devanflaherty" class="link" target="_blank"><i class="fa fa-dribbble"></i></a>
 </div>

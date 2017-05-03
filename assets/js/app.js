@@ -6,7 +6,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   "use strict";
 
-  var FOUNDATION_VERSION = '6.3.0-rc2';
+  var FOUNDATION_VERSION = '6.3.0';
 
   // Global Foundation object
   // This is attached to the window, or used as a module for AMD/Browserify
@@ -3173,6 +3173,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
           _this._back($menu);
         });
+
+        if (!this.options.autoHeight) {
+          this.$submenus.addClass('drilldown-submenu-cover-previous');
+        }
+
         if (!this.$element.parent().hasClass('is-drilldown')) {
           this.$wrapper = $(this.options.wrapper).addClass('is-drilldown');
           if (this.options.animateHeight) this.$wrapper.addClass('animate-height');
@@ -3271,8 +3276,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       value: function _keyboardEvents() {
         var _this = this;
 
-        this.$menuItems.add(this.$element.find('.js-drilldown-back > a')).on('keydown.zf.drilldown', function (e) {
-
+        this.$menuItems.add(this.$element.find('.js-drilldown-back > a, .is-submenu-parent-item > a')).on('keydown.zf.drilldown', function (e) {
           var $element = $(this),
               $elements = $element.parent('li').parent('ul').children('li').children('a'),
               $prevElement,
@@ -3464,20 +3468,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       key: '_getMaxDims',
       value: function _getMaxDims() {
-        var max = 0,
+        var maxHeight = 0,
             result = {},
-            oneHeight = this.$menuItems[0].getBoundingClientRect().height,
             _this = this;
         this.$submenus.add(this.$element).each(function () {
           var numOfElems = $(this).children('li').length;
-          max = numOfElems > max ? numOfElems : max;
+          var height = Foundation.Box.GetDimensions(this).height;
+          maxHeight = height > maxHeight ? height : maxHeight;
           if (_this.options.autoHeight) {
-            $(this).data('calcHeight', numOfElems * oneHeight);
-            if (!$(this).hasClass('is-drilldown-submenu')) result['height'] = numOfElems * oneHeight;
+            $(this).data('calcHeight', height);
+            if (!$(this).hasClass('is-drilldown-submenu')) result['height'] = height;
           }
         });
 
-        if (!this.options.autoHeight) result['min-height'] = max * oneHeight + 'px';
+        if (!this.options.autoHeight) result['min-height'] = maxHeight + 'px';
 
         result['max-width'] = this.$element[0].getBoundingClientRect().width + 'px';
 
@@ -3500,6 +3504,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.$submenuAnchors.each(function () {
           $(this).off('.zf.drilldown');
         });
+
+        this.$submenus.removeClass('drilldown-submenu-cover-previous');
+
         this.$element.find('a').each(function () {
           var $link = $(this);
           $link.removeAttr('tabindex');
@@ -4168,7 +4175,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         // Handle Leaf element Clicks
         if (_this.options.closeOnClickInside) {
           this.$menuItems.on('click.zf.dropdownmenu touchend.zf.dropdownmenu', function (e) {
-            var hasSub = $elem.hasClass(parClass);
+            var $elem = $(this),
+                hasSub = $elem.hasClass(parClass);
             if (!hasSub) {
               _this._hide();
             }
@@ -4181,10 +4189,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 hasSub = $elem.hasClass(parClass);
 
             if (hasSub) {
-              clearTimeout(_this.delay);
-              _this.delay = setTimeout(function () {
+              clearTimeout($elem.data('_delay'));
+              $elem.data('_delay', setTimeout(function () {
                 _this._show($elem.children('.is-dropdown-submenu'));
-              }, _this.options.hoverDelay);
+              }, _this.options.hoverDelay));
             }
           }).on('mouseleave.zf.dropdownmenu', function (e) {
             var $elem = $(this),
@@ -4194,10 +4202,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 return false;
               }
 
-              clearTimeout(_this.delay);
-              _this.delay = setTimeout(function () {
+              clearTimeout($elem.data('_delay'));
+              $elem.data('_delay', setTimeout(function () {
                 _this._hide($elem);
-              }, _this.options.closingTime);
+              }, _this.options.closingTime));
             }
           });
         }
@@ -5148,6 +5156,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       this.options = $.extend({}, Magellan.defaults, this.$element.data(), options);
 
       this._init();
+      this.calcPoints();
 
       Foundation.registerPlugin(this, 'Magellan');
     }
@@ -5233,6 +5242,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var arrival = this.getAttribute('href');
           _this.scrollToLoc(arrival);
         });
+        $(window).on('popstate', function (e) {
+          if (_this.options.deepLinking) {
+            _this.scrollToLoc(window.location.hash);
+          }
+        });
       }
 
       /**
@@ -5248,9 +5262,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         if (!$(loc).length) {
           return false;
         }
-        var scrollPos = Math.round($(loc).offset().top - this.options.threshold / 2 - this.options.barOffset);
+        this._inTransition = true;
+        var _this = this,
+            scrollPos = Math.round($(loc).offset().top - this.options.threshold / 2 - this.options.barOffset);
 
-        $('html, body').stop(true).animate({ scrollTop: scrollPos }, this.options.animationDuration, this.options.animationEasing);
+        $('html, body').stop(true).animate({ scrollTop: scrollPos }, this.options.animationDuration, this.options.animationEasing, function () {
+          _this._inTransition = false;_this._updateActive();
+        });
       }
 
       /**
@@ -5275,6 +5293,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       key: '_updateActive',
       value: function _updateActive() /*evt, elem, scrollPos*/{
+        if (this._inTransition) {
+          return;
+        }
         var winPos = /*scrollPos ||*/parseInt(window.pageYOffset, 10),
             curIdx;
 
@@ -5295,14 +5316,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.$active = this.$links.filter('[href="#' + this.$targets.eq(curIdx).data('magellan-target') + '"]').addClass(this.options.activeClass);
 
         if (this.options.deepLinking) {
-          var hash = " ";
+          var hash = "";
           if (curIdx != undefined) {
             hash = this.$active[0].getAttribute('href');
           }
-          if (window.history.pushState) {
-            window.history.pushState(null, null, hash);
-          } else {
-            window.location.hash = hash;
+          if (hash !== window.location.hash) {
+            if (window.history.pushState) {
+              window.history.pushState(null, null, hash);
+            } else {
+              window.location.hash = hash;
+            }
           }
         }
 
@@ -6647,6 +6670,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                  * @event ResponsiveToggle#toggled
                  */
                 _this2.$element.trigger('toggled.zf.responsiveToggle');
+                _this2.$targetMenu.find('[data-mutate]').triggerHandler('mutateme.zf.trigger');
               });
             } else {
               Foundation.Motion.animateOut(this.$targetMenu, this.animationOut, function () {
@@ -6659,6 +6683,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             }
           } else {
             this.$targetMenu.toggle(0);
+            this.$targetMenu.find('[data-mutate]').trigger('mutateme.zf.trigger');
 
             /**
              * Fires when the element attached to the tab bar toggles.
@@ -9168,6 +9193,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
 
         this._updateARIA(isOn);
+        this.$element.find('[data-mutate]').trigger('mutateme.zf.trigger');
       }
     }, {
       key: '_toggleAnimate',
@@ -9178,11 +9204,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           Foundation.Motion.animateIn(this.$element, this.animationIn, function () {
             _this._updateARIA(true);
             this.trigger('on.zf.toggler');
+            this.find('[data-mutate]').trigger('mutateme.zf.trigger');
           });
         } else {
           Foundation.Motion.animateOut(this.$element, this.animationOut, function () {
             _this._updateARIA(false);
             this.trigger('off.zf.toggler');
+            this.find('[data-mutate]').trigger('mutateme.zf.trigger');
           });
         }
       }
@@ -9850,20 +9878,58 @@ $(".close").click(function () {
 ;'use strict';
 
 // FULL HEIGHT HEADER & PARALLAX FADE
-$(function () {
-  resizeDiv();
-  $('.parallax').removeClass("invisible");
-});
-window.onresize = function (event) {
-  resizeDiv();
-};
 function resizeDiv() {
   var vph = $(window).height();
   $('.vh').css({ 'height': vph });
 }
+$(function () {
+  resizeDiv();
+  $('.parallax').removeClass("invisible");
+});
+
+$(window).on('resize', function () {
+  resizeDiv();
+});
 
 $(".parallax").waitForImages(function () {
   $(this).addClass('fade');
+});
+
+$(function () {
+  function activeOffset() {
+    var parPos = $("#main-nav ul").offset();
+    var parOffset = parPos.left - 100;
+    if ($("#main-nav .active").length) {
+      var activePos = $("#main-nav .active").offset();
+      var activeW = $("#main-nav .active").width();
+      var activeOffset = activePos.left + 22;
+
+      $("#main-nav .active").append('<span></span>');
+      $("#main-nav .active span").width(activeW + 4);
+      $('.selector').offset({ left: activeOffset }).width(activeW);
+    } else {
+      $('.selector').offset({ left: parOffset }).width('100');
+    }
+  }
+
+  activeOffset();
+  window.onresize = function (event) {
+    activeOffset();
+  };
+
+  $("#main-nav a").hover(function (event) {
+    var el = $(this);
+    function hoverOffset(el) {
+      var pos = el.offset();
+      var w = el.width();
+      var offset = pos.left + 22;
+
+      $('.selector').offset({ left: offset }).width(w - 2);
+    }
+    hoverOffset(el);
+  }, function (event) {
+    activeOffset();
+  });
 });
 ;"use strict";
 
@@ -10062,6 +10128,24 @@ $('.parallax').each(function () {
   // .addIndicators({name: "parallax"})
   .addTo(controller);
 });
+
+$('section:not(.navigation, .no-pull)').each(function () {
+  var currentStatement = this;
+  var trigger = currentStatement.closest('section');
+
+  var tween_statement = TweenMax.fromTo(currentStatement, 1, {
+    transform: 'translate(0px, 100px)'
+  }, {
+    transform: 'translate(0px, 0px)'
+  });
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: trigger,
+    triggerHook: "onEnter"
+  }).setTween(tween_statement)
+  // .addIndicators({name: "Pop"})
+  .addTo(controller);
+});
 ;'use strict';
 
 //Tweens
@@ -10245,4 +10329,112 @@ if ($("body").hasClass("Showcase")) {
   // .setTween(tween_case)
   // // .addIndicators({name: "swipe", indent: 120})
   // .addTo(controller);
+}
+;"use strict";
+
+// Tweens
+//heart
+if ($("body").hasClass("Who")) {
+  var tween_heart = TweenMax.staggerFromTo('#heart .columns', 2, {
+    transform: 'translate(0px, 100px)'
+  }, {
+    transform: 'translate(0px, 0px)', ease: Back.easeOut
+  }, 0.5);
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#heart",
+    triggerHook: "onEnter",
+    duration: "150%"
+  }).setTween(tween_heart)
+  // .addIndicators({name: "heart"})
+  .addTo(controller);
+
+  //services
+  var tween_services = new TimelineMax().staggerFromTo('.Process #services li:nth-child(odd)', 2, {
+    transform: 'translate(-50px, 0px)'
+  }, {
+    transform: 'translate(0px, 0px)', ease: Back.easeOut
+  }, 0.5);
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".Process #services",
+    triggerHook: "onEnter",
+    duration: "150%"
+  }).setTween(tween_services)
+  // .addIndicators({name: "services"})
+  .addTo(controller);
+
+  var tween_services = new TimelineMax().staggerFromTo('.Process #services li:nth-child(even)', 2, {
+    transform: 'translate(50px, 0px)'
+  }, {
+    transform: 'translate(0px, 0px)', ease: Back.easeOut
+  }, 0.5);
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".Process #services",
+    triggerHook: "onEnter",
+    duration: "150%"
+  }).setTween(tween_services)
+  // .addIndicators({name: "services"})
+  .addTo(controller);
+
+  // publication
+  var tween_publication = TweenMax.staggerFromTo('#publication .columns', 2, {
+    transform: 'translate(0px, 100px)'
+  }, {
+    transform: 'translate(0px, 0px)', ease: Back.easeOut
+  }, 0.5);
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#locpublication",
+    triggerHook: "onEnter",
+    duration: "100%"
+  }).setTween(tween_publication)
+  // .addIndicators({name: "Northwest"})
+  .addTo(controller);
+
+  // location
+  var tween_location = TweenMax.staggerFromTo('#location .columns', 2, {
+    transform: 'translate(0px, 100px)'
+  }, {
+    transform: 'translate(0px, 0px)', ease: Back.easeOut
+  }, 0.5);
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#locpublication",
+    triggerHook: "onEnter",
+    duration: "100%"
+  }).setTween(tween_location)
+  // .addIndicators({name: "Northwest"})
+  .addTo(controller);
+
+  //bio pic
+  var tween_bio = TweenMax.fromTo('.bio', 1, {
+    transform: 'translate(0px, -40px)'
+  }, {
+    transform: 'translate(0px, 0px)'
+  });
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#whois",
+    triggerHook: "onEnter",
+    duration: "150%"
+  }).setTween(tween_bio)
+  // .addIndicators({name: "bio"})
+  .addTo(controller);
+
+  // Instagram
+  var tween_instagram = new TimelineMax().staggerFromTo('.sl-pop div', 2, {
+    transform: 'translate(0px, 100px)'
+  }, {
+    transform: 'translate(0px, 0px)'
+  }, 0.33);
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#instagram",
+    triggerHook: "onEnter",
+    duration: "100%"
+  }).setTween(tween_instagram)
+  // .addIndicators({name: "instagram"})
+  .addTo(controller);
 }
